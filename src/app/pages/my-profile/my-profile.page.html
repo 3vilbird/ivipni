@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>My Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="my-profile">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Personal Details</ion-card-title>
+    </ion-card-header>
+    <ion-list *ngFor="let user of userDetails">
+      <ion-item>
+        <ion-note slot="start">First Name</ion-note>
+        <ion-text>{{user.firstname}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-note slot="start">Last Name</ion-note>
+        <ion-text>{{user.lastname}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-note slot="start">DOB</ion-note>
+        <ion-text>{{user.dob}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-note slot="start">Email</ion-note>
+        <ion-text>{{user.email}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-note slot="start">Phone Number</ion-note>
+        <ion-text>{{user.telephone}}</ion-text>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Company Details</ion-card-title>
+    </ion-card-header>
+    <ion-list *ngFor="let user of userDetails">
+      <ion-item>
+        <ion-note slot="start">Company Name</ion-note>
+        <ion-text>{{user.company_name}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-note slot="start">Incorporation Date</ion-note>
+        <ion-text>{{user.companyformationday}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-note slot="start">GST Number</ion-note>
+        <ion-text>{{user.gst_number}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-note slot="start">Address Line1</ion-note>
+        <ion-text>{{user.address_1}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-note slot="start">Address Line2</ion-note>
+        <ion-text>{{user.address_2}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-note slot="start">City</ion-note>
+        <ion-text>{{user.city}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-note slot="start">State</ion-note>
+        <ion-text>{{user.name}}</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-note slot="start">Pincode</ion-note>
+        <ion-text>{{user.postcode}}</ion-text>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>

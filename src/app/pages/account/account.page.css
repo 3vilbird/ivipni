@@ -1,0 +1,61 @@
+.account {
+  background-color: WhiteSmoke;
+}
+
+.account ion-card-header {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.account ion-card-content {
+  font-size: 14px;
+  float: right;
+  color: #387ef5;
+}
+
+.account ion-card {
+  width: 93%;
+}
+
+.account hr {
+  width: 97%;
+}
+
+.account .ion-label {
+  color: #387ef5;
+}
+
+.account {
+  background-color: WhiteSmoke;
+}
+
+.account ion-card-header {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.account ion-card {
+  width: 94%;
+  font-family: "PT Serif", serif;
+}
+
+.accountleft {
+  background: #d5fcf4;
+  background: linear-gradient(25deg, #f8fafa 60%, #e0f5ec 79%, #7ce6f1 100%);
+  color: #000;
+  padding: 10px;
+  text-align: center;
+  font-family: "PT Serif", serif;
+}
+
+.accountright {
+  position: relative;
+  margin-left: 50px;
+  background: #d5fcf4;
+  background: linear-gradient(25deg, #f8fafa 60%, #e0f5ec 79%, #7ce6f1 100%);
+  color: #000;
+  padding: 10px;
+  text-align: center;
+  font-family: "PT Serif", serif;
+}
+/*# sourceMappingURL=account.page.css.map */

@@ -1,0 +1,177 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons end>
+      <ion-col>
+        <ion-button (click)="openMenu()">
+          <ion-icon name="menu"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-button (click)="quickOrderFn()">
+        <ion-icon name="search"></ion-icon>
+      </ion-button>
+      <ion-button (click)="wishListFn()">
+        <ion-icon name="heart"></ion-icon>
+        <div class="qntyColor">{{wishlistCount}}</div>
+      </ion-button>
+      <ion-button (click)="cartFn()" class="badge-button">
+        <ion-icon name="cart"></ion-icon>
+        <ion-badge class="cart-badge" color="danger">{{cartCount}}</ion-badge>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!--side menu starts here-->
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>{{loginData.data.customer.company_name}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="account()" menuClose>
+        <ion-icon name="person-outline" slot="start"></ion-icon>
+        <ion-label>My account</ion-label>
+      </ion-item>
+      <ion-item (click)="wishListFn()" menuClose>
+        <ion-icon name="heart-outline" slot="start"></ion-icon>
+        <ion-label>Wish List</ion-label>
+      </ion-item>
+      <ion-item (click)="cartFn()" menuClose>
+        <ion-icon name="cart-outline" slot="start"></ion-icon>
+        <ion-label>My cart</ion-label>
+      </ion-item>
+      <ion-item (click)="sellerinfo()" menuClose>
+        <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+        <ion-label>Seller Info</ion-label>
+      </ion-item>
+      <ion-item (click)="call()" menuClose>
+        <ion-icon name="call-outline" slot="start"></ion-icon>
+        <ion-label>Contact Us</ion-label>
+      </ion-item>
+      <ion-item (click)="logout()" menuClose>
+        <ion-icon name="log-out-outline" slot="start"></ion-icon>
+        <ion-label>Logout</ion-label>
+      </ion-item>
+      <ion-item menuClose>
+        <i>Version :{{appVersionnumber}}</i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-content [fullscreen]="true" id="main">
+  <ion-card class="card-header" *ngIf="productCategory.length != 0">
+    <ion-card-header class="ion-align-items-center">
+      <i>Promotional Products:</i>
+      <a color="primary" (click)="allProduct()" class="ion-justify-content-end">
+        View All
+      </a>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-row class="topProducSlidSize">
+    <ion-slides
+      *ngIf="topProducts && topProducts.length > 0"
+      loop="true"
+      speed="3000"
+      autoplay="5000"
+      pager="true"
+      #slider
+      (ionSlidesDidLoad)="slidesDidLoad(slider)"
+    >
+      <ion-slide *ngFor="let product of topProducts">
+        <!--please replace the below string interpolation-->
+        <img src="{{product.image}}" />
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+
+  <ion-row class="prodCatindex">
+    <ion-slides [options]="categories">
+      <ion-slide
+        *ngFor="let prodCat of productCategory;let idx = index"
+        class="product1"
+      >
+        <ion-col *ngIf="idx <= 8">
+          <ion-card class="productcategoryioncol">
+            <ion-item-sliding #item>
+              <ion-item class="ionitemhome"> <b>{{prodCat.name}}</b> </ion-item>
+            </ion-item-sliding>
+            <ion-item>
+              <p claas="valueelement">{{prodCat.model}}</p>
+            </ion-item>
+
+            <p *ngIf="prodCat.option1[0].price != 0">
+              <b>{{prodCat.option1[0].price}}</b>
+            </p>
+            <p
+              class="discount_amt"
+              *ngIf="prodCat.option1[0].salesprice > prodCat.option1[0].price && prodCat.option1[0].salesprice != 0"
+            >
+              {{prodCat.option1[0].salesprice}}
+            </p>
+
+            <ion-row class="homeclassionrow">
+              <ion-col class="quantityborder">
+                <div
+                  *ngIf="productCategory[idx].quantity > 0"
+                  class="quantity ion-margin-start"
+                >
+                  <ion-input
+                    class="quantityhome"
+                    type="number"
+                    value=""
+                    [(ngModel)]="productCategory[idx].required"
+                  >
+                  </ion-input>
+                </div>
+              </ion-col>
+              <ion-col class="cartforhome">
+                <div *ngIf="productCategory[idx].quantity > 0">
+                  <ion-button
+                    (click)="addToCart(productCategory[idx])"
+                    expand="full"
+                    fill="clear"
+                    color="medium"
+                  >
+                    <ion-icon name="cart"></ion-icon>
+                  </ion-button>
+                </div>
+                <div
+                  *ngIf="productCategory[idx].quantity <= 0"
+                  class="icon_home_color"
+                >
+                  <div>Out of stock</div>
+                  <br />
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+
+  <ion-card class="card-header">
+    <ion-card-header>
+      <span class="right_textcategories"><b>CATEGORIES:</b></span>
+    </ion-card-header>
+  </ion-card>
+  <ion-row class="brandNameSlideSize">
+    <div *ngFor="let catName of brandName">
+      <ion-col class="brandNameSlideSizeforcol">
+        <ion-card class="brandNamehome" (click)="infoBrandItem(catName);">
+          <ion-item>
+            <!--please replace the temp image-->
+            <img class="imageCat" src="{{catName.image}}" />
+          </ion-item>
+          <ion-item>
+            <p class="nameinhome">{{catName.sub_category_name}}</p>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+    </div>
+  </ion-row>
+</ion-content>

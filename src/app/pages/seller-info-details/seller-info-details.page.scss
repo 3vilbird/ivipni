@@ -1,0 +1,131 @@
+.background-color {
+    background-color: WhiteSmoke;
+  
+   .platform-android .ion-card {
+      background-color: white;
+      padding: 4px 4px;
+      img {
+        max-width: 100%;
+        max-height: 15%;
+        height: 134px;
+        border: 0;
+      }
+    }
+  
+    .platform-ios .ion-card {
+      background-color: white;
+      padding: 4px 4px;
+      img {
+        max-width: 100%;
+        max-height: 50%;
+        height: 134px;
+        border: 0;
+      }
+    }
+    ion-card ion-card-content {
+      border-top: 1px;
+      padding-top: 0px;
+    }
+    ion-card h2 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #655f5f;
+    }
+    ion-row {
+      color: #bdbdbd;
+    }
+    ion-card ion-card-header {
+      color: #467ed9;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    ion-icon.heart.ion-md-heart {
+      margin-left: 200px;
+      font-size: 30px;
+    }
+  
+    .icon_heart_red {
+      color: #537fc5;
+      font-size: 25px;
+      float: right;
+    }
+    .icon_heart {
+      color: #bdbdbd;
+      font-size: 25px;
+      float: right;
+    }
+  
+    .options_height {
+      border: 1px solid #bfbcbc;
+    }
+  }
+  .icon-align {
+    margin-left: auto;
+  
+    font-size: 30px;
+  }
+  
+  .margin_last_row {
+    margin-top: 10px;
+  
+    .text-input {
+      border: 1px solid #bfbcbc;
+    }
+  
+    p.discount_amt {
+      text-decoration: line-through;
+    }
+  
+    p.price {
+      font-weight: bold;
+    }
+  
+    .icon_cart_color {
+      color: #d43281;
+      margin-top: 15px;
+    }
+  
+    .icon_cart {
+      color: #15a033;
+      font-size: 25px;
+      margin-left: 45px;
+    }
+  }
+  
+  .toast-md .toast-wrapper {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    margin: auto;
+    width: 85%;
+    max-width: 700px;
+    border-radius: 35px;
+    background: gray;
+  }
+  
+  .first_info{
+      width:50%;
+          float:left;
+      }
+      //second coloumn div
+      .second_info {
+          width: 48%;
+      float: right;
+      //margin-top: 20px;
+      }
+  
+      .second_info p {
+    margin-left: 6px;
+    margin-bottom: -10px;
+    margin-top: 12px;
+    font-size: 1.5rem;
+  }
+  
+  .toast-md .toast-message {
+    padding: 19px 16px 17px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  

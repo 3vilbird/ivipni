@@ -1,0 +1,153 @@
+.thank-you {
+    background-color: WhiteSmoke;
+    .success {
+      color: green;
+      font-size: 30px;
+      margin: 0 auto;
+    }
+    p.success_text {
+      margin: auto;
+    }
+    p.order_text {
+      margin: auto;
+    }
+  
+    .failure {
+      color: red;
+      font-size: 30px;
+      margin: 0 auto;
+    }
+  
+    .ion-item1 {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  
+    .ion-item2 {
+      font-size: 14px;
+      font-weight: normal;
+    }
+  
+    .ion-item ion-col {
+     // display: block;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      border: 1px solid black;
+      padding: 1px 0 0px 0;
+      margin: 0.8px;
+      text-indent: 5px;
+      background-color: WhiteSmoke;
+    }
+    .header {
+      font-size: 15px;
+      font-weight: bold;
+      color: #387ef5;
+      padding-bottom: 15px;
+    }
+  
+    .background {
+      padding-top: 10px;
+    }
+    .dataname {
+      width: 20px;
+    }
+   .datanamethank {
+      width: 20px;
+    }
+  
+  
+    .dataname b {
+      max-width: 20px;
+      //white-space: normal;
+      //display: inline-block;
+      text-overflow: ellipsis;
+    
+    }
+    // .span {
+    //   white-space: nowrap;
+    
+    // }
+  
+    .deliver-details {
+      font-weight: normal;
+          white-space: normal;
+      font-size: 14px;
+    }
+    .deliver-details_2 {
+      margin-top: -18px;
+      font-weight: normal;
+      font-size: 14px;
+    }
+    .total {
+      background-color: lightgrey;
+      padding-top: 0px;
+  
+      padding-right: -30px;
+    }
+  
+    // .aline {
+    //   margin-left: 5px;
+    //   margin-right: 5px;
+      
+    // }
+    // .item ion-row ion-col {
+    //   border: 1.5px solid #888 !important;
+    //   padding: 3px !important;
+    //   padding-left: 5px;
+    //   padding-right: 5px;
+    //   white-space: normal;
+    // }
+    // .item ion-row .totalthank {
+    //   text-align: center !important;
+       
+    // }
+  
+    .title {
+      padding-left: 10px;
+    }
+    .contact_details_place {
+      padding-top: 5px;
+    }
+  
+    .contact-mail {
+      font-weight: normal;
+      font-size: 13px;
+      margin-top: -10px !important;
+      margin-bottom: 8px;
+    }
+  
+    .dataarraythankyou {
+      border: 1.5px solid #888 !important;
+    }
+    .aline ion-row {
+      padding-left: 10px;
+   .placecol1{
+  
+      border: 1px solid #edebeb !important;
+      white-space: wrap;
+      width:75%;
+  }
+    .placecol2{
+      border: 1px solid #edebeb !important;
+  width:23%;
+    }
+  
+  }
+    .item ion-row{
+  padding-left: 10px;
+      
+    .placecol1 {
+      border: 1px solid #edebeb !important;
+      white-space: normal;
+      width:75%;
+  }
+    .placecol2{
+      border: 1px solid #edebeb !important;
+  width:23%;
+    }
+  }
+  
+   
+  }
+  

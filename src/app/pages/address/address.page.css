@@ -1,0 +1,79 @@
+.address {
+  background-color: WhiteSmoke;
+}
+
+.address ion-card {
+  background-color: white;
+}
+
+.address .color {
+  color: green;
+}
+
+.address .card-ios {
+  margin: 12px 12px 12px 0px;
+}
+
+.address .card-md {
+  margin: 12px 12px 12px 0px;
+}
+
+.address .color1 {
+  color: gray;
+  font-size: 20px;
+  float: right;
+  padding-right: 10px;
+}
+
+.address .color2 {
+  color: gray;
+}
+
+.address ion-card-header {
+  padding: 0px;
+}
+
+.address .first b {
+  margin-left: 11px;
+  margin-top: 3px;
+  color: blue;
+}
+
+.address .last b {
+  margin-left: -20px;
+  color: blue;
+}
+
+.address .card-content-md {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 13px;
+  font-size: 1.4rem;
+  line-height: 2.3;
+}
+
+.address .card-content-ios {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 1.4rem;
+  line-height: 2.3;
+}
+
+.address ion-card-content ion-row p {
+  color: black;
+  margin-bottom: -5px;
+}
+
+.address ion-card-content ion-row ion-col {
+  margin-bottom: -14px;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+.address .addressshow {
+  margin-top: -3px;
+}
+/*# sourceMappingURL=address.page.css.map */

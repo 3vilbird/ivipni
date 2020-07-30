@@ -1,0 +1,65 @@
+.wifi {
+    text-align: center;
+    margin-top: 10%;
+    color: white;
+  }
+  .wifi ion-icon {
+    font-size: 3.5em;
+  }
+  .nocon {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+  }
+  .internet {
+    background-color: #387ef5;
+  }
+  .nocon .btn1 {
+    color: #0651d0;
+    background-color: white;
+    margin-left: 25px;
+    border: 3px solid white;
+    font-size: 15px;
+    padding: 22px;
+  }
+  .img-circle {
+    border-radius: 50%;
+    border: 1px solid #84af9c;
+  }
+  .internet img {
+    width: 40%;
+  }
+  .item-avatar {
+    text-align: center;
+    margin-top: 60%;
+  }
+  .nocon .btn {
+    color: #fff;
+    background-color: #387ef5;
+    border: 3px solid white;
+    font-size: 15px;
+    padding: 22px;
+  }
+  .wifi p {
+    font-size: 1.2em;
+  }
+  
+  .toast-md .toast-wrapper {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    margin: auto;
+    width: 85%;
+    max-width: 700px;
+    border-radius: 35px;
+    background: gray;
+  }
+  
+  .toast-md .toast-message {
+    padding: 19px 16px 17px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  

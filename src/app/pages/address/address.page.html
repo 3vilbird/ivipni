@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Select delivery address
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="address">
+  <ion-item lines="none">
+    <ion-label><b>Delivery Address</b></ion-label>
+    <ion-icon name="add-circle-outline" class="color" slot="end" (click)="checkoutFn()"></ion-icon>
+  </ion-item>
+
+  <ion-card *ngFor="let details of firstIndex">
+    <ion-card-header class="ion-margin">
+      <ion-card-title>{{details.firstname}} {{details.lastname}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content (click)="placeOrder(details)">
+      <h2>{{details.company}}</h2>
+      <h2>{{details.address_1}}</h2>
+      <h2>{{details.address_2}}</h2>
+      <h2>{{details.city}}, {{details.name}}, {{details.postcode}}</h2>
+      <ion-item lines="none">
+        <ion-icon name="mail-open" class="ion-padding-end"></ion-icon>
+        <ion-label>{{details.email}}</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon name="call" class="ion-padding-end"></ion-icon>
+        <ion-label>{{details.telephone}}</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngFor="let details of checkOutAddr">
+    <ion-card-header>
+      <ion-item lines="none">
+        <ion-card-title>{{details.firstname}} {{details.lastname}}</ion-card-title>
+        <ion-icon name="pencil-outline" (click)="checkoutEdit(details)" slot="end"></ion-icon>
+      </ion-item>
+    </ion-card-header>
+    <ion-card-content (click)="placeOrder(details)">
+      <h2>{{details.company}}</h2>
+      <h2>{{details.address_1}}</h2>
+      <h2>{{details.address_2}}</h2>
+      <h2>{{details.city}}, {{details.name}}, {{details.postcode}}</h2>
+      <ion-item lines="none">
+        <ion-icon name="mail-open" class="ion-padding-end"></ion-icon>
+        <ion-label>{{details.email}}</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon name="call" class="ion-padding-end"></ion-icon>
+        <ion-label>{{details.telephone}}</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button shape="round" class="ion-margin" expand="full" color="medium" (click)="deleteAddress(details)">
+    Remove
+  </ion-button>
+</ion-content>

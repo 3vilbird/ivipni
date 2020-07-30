@@ -1,0 +1,76 @@
+
+<ion-header>
+  <ion-nav color="primary">
+      <ion-title>Payment Received</ion-title>
+  </ion-nav>
+</ion-header>
+
+<ion-content class="thank-you">
+  <div *ngIf="orderSuccess">
+      <ion-item no-lines>
+          <ion-row>
+              <ion-icon ios="ios-checkmark-circle" md="md-checkmark-circle" class="success"></ion-icon>
+          </ion-row>
+          <ion-row no-lines class="ion-item1">
+              <p class="success_text">Payment Successful! </p>
+          </ion-row>
+
+          <ion-row class="ion-item2">
+              <p class="order_text">Thank you.Your Payment has been updated. </p>
+          </ion-row>
+      </ion-item>
+  </div>
+
+  <div *ngIf="orderFailure">
+      <ion-item>
+          <ion-row>
+              <ion-icon ios="ios-close-circle" md="md-close-circle" class="failure"></ion-icon>
+          </ion-row>
+
+          <ion-row no-lines class="ion-item1">
+              <p class="success_text">Order Failed! </p>
+          </ion-row>
+
+          <ion-row class="ion-item2">
+              <p class="order_text">Oops! Failed to place your Payment. </p>
+          </ion-row>
+      </ion-item>
+  </div>
+
+  <ion-item class="ion-item" no-lines>
+      <ion-row *ngIf="orderSuccess">
+          <ion-col>Order number</ion-col>
+          <br>
+          <ion-col>{{order_id}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-col>Date</ion-col>
+          <br>
+          <ion-col>{{date | date:'dd-MM-yyyy'}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-col>Total</ion-col>
+          <br>
+          <ion-col>{{seventyfiveamount | currency:'INR':true}}</ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-col>Payment method</ion-col>
+          <br>
+          <ion-col>{{paymentMethod}}</ion-col>
+      </ion-row>
+  </ion-item>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <div *ngIf="orderSuccess">
+          <button color="primary" ion-button (click)="submit();" block> Home </button>
+      </div>
+      <div *ngIf="orderFailure">
+          <button color="primary" ion-button block outline (click)="notSubmit()">MoveToCart</button>
+      </div>
+  </ion-toolbar>
+</ion-footer>

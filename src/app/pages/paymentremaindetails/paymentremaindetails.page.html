@@ -1,0 +1,66 @@
+
+<ion-header>
+  <ion-nav color="primary">
+      <ion-title>Payment Details</ion-title>
+  </ion-nav>
+</ion-header>
+
+<ion-content class="payment">
+  <ion-card class="ion-card">
+      <ion-item>
+          <ion-label><b class="date">Payment Type</b>
+          </ion-label>
+          <ion-select [(ngModel)]="seventyfive_payment_method">
+              <ion-select-option>NEFT</ion-select-option>
+              <ion-select-option>UPI</ion-select-option>
+              <ion-select-option>IMPS</ion-select-option>
+              <ion-select-option>RTGS</ion-select-option>
+          </ion-select>
+      </ion-item>
+      <ion-item>
+          <ion-label><b class="date">Date</b>
+          </ion-label>
+           <ion-label class="optionselectpay"><span [(value)]="localDate" [max]="datetoday"  clear class="ScheduleDate">
+  <span>{{localDate | date: 'dd/MM/yyyy'}} <ion-icon name="clipboard" item-left ></ion-icon> </span>
+</span></ion-label>
+          <!--<ion-datetime displayFormat="DD/MM/YYYY"  [(ngModel)]="datetoday"></ion-datetime>-->
+      </ion-item>
+      <ion-item>
+          <ion-label><b>Amount Paid</b>
+          </ion-label>
+          <ion-label class="optionselectpay"><b>{{twentyfiveamount | currency:'INR':true}}</b>
+          </ion-label>
+      </ion-item>
+      <ion-item [(ngModel)]="seventyfivetransaction_id">
+          <ion-label class="transactionid"><b class="date">Transaction Id</b>
+          </ion-label>
+          <ion-input class="transactionpay" type="text" placeholder="XXXXXXXXX"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label><b>Amount Due</b>
+          </ion-label>
+          <ion-label class="optionselectpay"><b>{{seventyfiveamount | currency:'INR':true}}</b>
+          </ion-label>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>
+              <b> Total</b>
+          </ion-label>
+          <ion-label class="optionselectpay">
+              <b> {{total |  currency:'INR':true}}</b>
+          </ion-label>
+      </ion-item>
+  </ion-card>
+
+  <ion-card class="cardtotal">
+      <div>
+      </div>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <button ion-button full (click)="placeOrders()"> Save </button>
+  </ion-toolbar>
+</ion-footer>

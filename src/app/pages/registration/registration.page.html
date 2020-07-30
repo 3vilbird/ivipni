@@ -1,0 +1,237 @@
+  <ion-header class="registertion">
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+        Registration
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <form [formGroup]="registrationForm" (ngSubmit)="submit()">
+    <ion-list>
+      <ion-card>
+        <ion-row class="head">
+          <p>Personal Details</p>
+        </ion-row>
+        <ion-list>
+          <ion-item>
+            <ion-label floating>First Name</ion-label>
+            <ion-input type="text" id="first_name" class="form-control" formControlName="first_name"></ion-input>
+          </ion-item>
+          <p *ngIf="!registrationForm.controls.first_name.valid && registrationForm.controls.first_name.touched  ">
+            <small class="up">
+              <strong><i>
+                  Please enter minimum 3 characters
+                </i></strong>
+            </small>
+          </p>
+
+          <ion-item>
+            <ion-label floating>Last Name</ion-label>
+            <ion-input type="text" id="last_name" class="form-control" formControlName="last_name"></ion-input>
+          </ion-item>
+          <p *ngIf="!registrationForm.controls.last_name.valid && registrationForm.controls.last_name.touched  ">
+            <small class="up">
+              <strong><i>
+                  Please enter minimum 3 characters
+                </i></strong>
+            </small>
+          </p>
+
+          <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="email" id="email" class="form-control" formControlName="email"></ion-input>
+          </ion-item>
+          <p *ngIf="!registrationForm.controls.email.valid && registrationForm.controls.email.touched "
+            class="alert alert-danger">
+            <small class="up">
+              <strong>
+                <i>
+                  Please Enter Valid Email Address!
+                </i></strong>
+            </small>
+          </p>
+
+          <ion-item>
+            <ion-label floating>Phone number</ion-label>
+            <ion-input type="number" id="mobile" class="form-control" formControlName="mobile"></ion-input>
+          </ion-item>
+          <p *ngIf="!registrationForm.controls.mobile.valid && registrationForm.controls.mobile.touched  ">
+            <small class="up">
+              <strong><i>
+                  Phone number must be 10 digits!
+                </i></strong>
+            </small>
+          </p>
+
+          <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password" id="password" class="form-control" formControlName="password"></ion-input>
+          </ion-item>
+          <p *ngIf="!registrationForm.controls.password.valid && registrationForm.controls.password.touched">
+            <small class="up">
+              <strong><i>
+                  Password must contain atleast 6 Char
+                </i></strong>
+            </small>
+          </p>
+
+          <ion-item>
+            <ion-label floating>Re-enter Password</ion-label>
+            <ion-input type="password" id="reenterpassword" class="form-control" formControlName="reenterpassword">
+            </ion-input>
+          </ion-item>
+          <p
+            *ngIf="!registrationForm.controls.reenterpassword.valid && registrationForm.controls.reenterpassword.touched">
+            <small class="up">
+              <strong><i>
+                  Renter Password must contain atleast 6 Char
+                </i></strong>
+            </small>
+          </p>
+        </ion-list>
+      </ion-card>
+      <ion-card>
+        <ion-list>
+          <ion-row class="com">
+            <p>Company Details</p>
+          </ion-row>
+          <ion-item>
+            <ion-label floating>Company Name</ion-label>
+            <ion-input type="text" id="company_name" class="form-control" formControlName="company_name"></ion-input>
+          </ion-item>
+          <p *ngIf="!registrationForm.controls.company_name.valid && registrationForm.controls.company_name.touched">
+            <small class="up">
+              <strong><i>
+                  Company name is required
+                </i></strong>
+            </small>
+          </p>
+
+          <ion-item>
+            <ion-label floating>Company Formation Day</ion-label>
+            <ion-datetime displayFormat="MMM DD, YYYY" pickerFormat="DDD MMMM YYYY" id="companyformationday"
+              formControlName="companyformationday"></ion-datetime>
+          </ion-item>
+          <p
+            *ngIf="!registrationForm.controls.companyformationday.valid && registrationForm.controls.companyformationday.touched">
+            <small class="up">
+              <strong><i>
+                  Company Formation Day is require
+                </i></strong>
+            </small>
+          </p>
+
+          <ion-item>
+            <ion-label floating>GST Number</ion-label>
+            <ion-input type="text" id="company_tax_number" class="form-control" formControlName="company_tax_number">
+            </ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label floating>Alternate Telephone</ion-label>
+            <ion-input type="number" id="alternativetelephone" class="form-control"
+              formControlName="alternativetelephone"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label floating>Fax</ion-label>
+            <ion-input type="number" id="fax" class="form-control" formControlName="fax"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label floating>Primary Category</ion-label>
+            <ion-select id="primarycategory" class="form-control" formControlName="primarycategory">
+              <ion-select-option [value]="categorie.category_id" *ngFor="let categorie of categories; let idx = index">
+                {{categorie.name}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <p
+            *ngIf="!registrationForm.controls.primarycategory.valid && registrationForm.controls.primarycategory.touched">
+            <small class="up">
+              <strong><i>
+                  Primary category is required
+                </i></strong>
+            </small>
+          </p>
+        </ion-list>
+      </ion-card>
+      <ion-card>
+        <ion-list>
+          <ion-row class="add">
+            <p>Address</p>
+          </ion-row>
+          <ion-item>
+            <ion-label floating>Address Line1</ion-label>
+            <ion-input type="text" id="address1" class="form-control" formControlName="address1"></ion-input>
+          </ion-item>
+          <p *ngIf="!registrationForm.controls.address1.valid && registrationForm.controls.address1.touched">
+            <small class="up">
+              <strong><i>
+                  address must have minimum 3 characters
+                </i></strong>
+            </small>
+          </p>
+          <ion-item>
+            <ion-label floating>Address Line2</ion-label>
+            <ion-input type="text" id="address2" class="form-control" formControlName="address2"></ion-input>
+          </ion-item>
+          <p *ngIf="!registrationForm.controls.address2.valid && registrationForm.controls.address2.touched">
+            <small class="up">
+              <strong><i>
+                  address must have minimum 3 characters
+                </i></strong>
+            </small>
+          </p>
+          <ion-row>
+            <ion-item>
+              <ion-label floating>Town/City</ion-label>
+              <ion-input type="text" id="city" class="form-control" formControlName="city"></ion-input>
+            </ion-item>
+            <p *ngIf="!registrationForm.controls.city.valid && registrationForm.controls.city.touched">
+              <small class="up">
+                <strong><i>
+                    City name is required
+                  </i></strong>
+              </small>
+            </p>
+            <ion-item>
+              <ion-label floating>State</ion-label>
+              <ion-select id="state" class="form-control" formControlName="state" (ionChange)="myOptionFn();">
+                <ion-select-option *ngFor="let item of optionsList" [value]="item.name">{{item.name}}</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <p *ngIf="!registrationForm.controls.state.valid && registrationForm.controls.state.touched">
+              <small class="up">
+                <strong><i>
+                    State is required
+                  </i></strong>
+              </small>
+            </p>
+          </ion-row>
+          <ion-item>
+            <ion-label floating>Pin Code</ion-label>
+            <ion-input type="number" id="zip" class="form-control" formControlName="zip"></ion-input>
+          </ion-item>
+          <p *ngIf="!registrationForm.controls.zip.valid && registrationForm.controls.zip.touched">
+            <small class="up">
+              <strong><i>
+                  Pin code must have 6 digits
+                </i></strong>
+            </small>
+          </p>
+        </ion-list>
+      </ion-card>
+    </ion-list>
+
+    <ion-footer>
+      <ion-toolbar>
+        <ion-button type="submit" color="primary" [disabled]="!registrationForm.valid" expand="full" shape="round">
+          Register</ion-button>
+      </ion-toolbar>
+    </ion-footer>
+  </form>
+</ion-content>

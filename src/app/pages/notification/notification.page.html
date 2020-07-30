@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Notifications</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        Manage your push notification from this section &stay update with latest
+        products & offer on Auto Parts.
+      </ion-item>
+      <ion-item (click)="updateValue()">
+        <ion-label> Notification</ion-label>
+        <ion-toggle [(ngModel)]="notify" (ngModelChange)="updateValue()"></ion-toggle>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

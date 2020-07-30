@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-nav color="primary">
+      <ion-title>ProductDetails</ion-title>
+    </ion-nav>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-color">
+  <ion-card>
+    <img src="{{image}}" />
+    <ion-card-content>
+      <ion-row>
+        <ion-col width-80>
+          <h2>{{name}}</h2>
+          <h5>{{model}}</h5>
+        </ion-col>
+        <ion-col width-20>
+          <div [ngClass]="wishlist_check == 1 ? 'icon_heart_red':'icon_heart'">
+            <ion-icon
+              name="heart"
+              (click)="setWishlist();"
+              class="heart"
+            ></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div class="options_height" *ngIf="options.length > 1">
+          <ion-item>
+            <ion-label floating></ion-label>
+
+            <ion-select
+              [interfaceOptions]="selectOptions"
+              (ngModel)="place"
+              (ionChange)="optionsFn($event);"
+            >
+              <ion-select-option
+                [value]="item"
+                *ngFor=" let item of options; let idx = index"
+                >{{item.name}}</ion-select-option
+              >
+            </ion-select>
+          </ion-item>
+        </div>
+        <div class="options_height" *ngIf="options.length == 1">
+          {{optionEvent.name}}
+        </div>
+        <div *ngIf="options.length == 0">
+          <span>No Delar Available</span>
+        </div>
+      </ion-row>
+      <div class="margin_last_row">
+        <ion-row>
+          <ion-col width-33>
+            <div class="price_main">
+              <p class="price">{{optionEvent.price}}</p>
+              <p class="discount_amt">{{optionEvent.salesprice}}&nbsp;&nbsp;</p>
+            </div>
+          </ion-col>
+          <ion-col width-33>
+            <div *ngIf="optionEvent.quantity > 0">
+              <ion-input
+                type="number"
+                value=""
+                [(ngModel)]="requestedQty"
+              ></ion-input>
+            </div>
+          </ion-col>
+          <ion-col width-33>
+            <div class="icon_cart" *ngIf="optionEvent.quantity > 0">
+              <ion-icon
+                name="cart"
+                class="cart"
+                (click)="addToCart(optionEvent)"
+              ></ion-icon>
+            </div>
+            <div *ngIf="optionEvent.quantity == 0" class="icon_cart_color">
+              <div class="outofStack">out of stock</div>
+              <br />
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Details
+    </ion-card-header>
+    <ion-card-content>
+      <b>Specification</b>
+      <ion-row>{{meta_description}}</ion-row>
+      <b>Description</b>
+      <ion-row>{{description}}</ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button color="primary" full (click)="addToCart()">
+      Add To Cart
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

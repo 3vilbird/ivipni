@@ -1,0 +1,50 @@
+<!--
+  Generated template for the MyOrderPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-nav color="primary">
+      <ion-title>Payments</ion-title>
+  </ion-nav>
+</ion-header>
+
+<ion-content class="my-order">
+  <ion-card class="order1" *ngFor="let amounts of amount " (click)="paymentdetail(amounts)">
+      <ion-row>
+          <ion-col class="col1"><b>Order Id:</b>
+          </ion-col>
+          <ion-col class="col2"><b>{{amounts.order_id}}</b>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col class="col1">
+              <p>Amount Paid:</p>
+          </ion-col>
+          <ion-col class="col2">
+              <p>{{amounts.twentyfiveamount|currency:'INR':true}}</p>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col class="col1">
+              <p>Amount Due:</p>
+          </ion-col>
+          <ion-col class="col2">
+              <p>{{amounts.amount-amounts.twentyfiveamount|currency:'INR':true}}</p>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col class="col1">
+              <p>Order Date:</p>
+          </ion-col>
+          <ion-col class="col2">
+              <p>{{amounts.date_added}}</p>
+          </ion-col>
+      </ion-row>
+  </ion-card>
+
+  <div *ngIf="amountRemainCount">
+      <h1 class="paymentremain"><b>No record found</b></h1>
+  </div>
+</ion-content>

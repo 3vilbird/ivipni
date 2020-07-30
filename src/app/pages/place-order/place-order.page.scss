@@ -1,0 +1,137 @@
+.placeorder{
+    button {
+      text-align: center;
+      text-transform: lowercase;
+    }
+  
+    .card-md {
+      line-height: 2.0;
+    }
+    .card-ios {
+      line-height: 2.0;
+    }
+  
+    .card-md p {
+      margin-right: 0;
+      margin-top: 6px;
+      margin-bottom: 2px;
+      font-size: 1.4rem;
+      font-weight: normal;
+      line-height: 2.0;
+    }
+    .card-ios p {
+      margin-right: 0;
+      margin-top: 0;
+      margin-bottom: 2px;
+      font-size: 1.4rem;
+      font-weight: normal;
+      line-height: 2.0;
+    }
+    // .item ion-row ion-col {
+    //   border: 1.5px solid #888 !important;
+    //   padding: 3px !important;
+    //   padding-left: 5px;
+    //   padding-right: 5px;
+    // }
+    // .item ion-row .total {
+    //   text-align: center !important;
+    // }
+    .addresplaceorder {
+      margin-top: 20px;
+      background-color: lightgray;
+    }
+  
+    // .aline {
+    //   margin-left: 5px;
+    //   margin-right: 5px;
+    // }
+    ion-card div ion-row .clas1 {
+      margin-bottom: -10px;
+      color: black;
+    }
+    ion-card div ion-row .clas2 {
+      margin-bottom: -25px;
+    }
+    ion-card div ion-row .clas3 {
+      margin-bottom: -20px;
+    }
+    .row p {
+      //margin-left: 50px;
+      padding-left: 15px;
+      padding: 5px;
+    }
+    ion-card div ion-row .clas4 {
+      margin-bottom: -15px;
+    }
+    .dataname {
+      width: 20px;
+    }
+  
+    ion-card {
+      margin-top: -10px;
+    }
+    .clas3place {
+      margin-right: -100px;
+    }
+    
+  }
+    
+  
+  .aline ion-row {
+      padding-left: 10px;
+   .placecol1{
+      border: 1px solid #edebeb !important;
+      width:75%;
+    //max-height: 40px;
+  }
+    .placecol2{
+      border: 1px solid #edebeb !important;
+  width:25%;
+  //max-height: 40px;
+    }
+  
+  }
+  
+  .item ion-row{
+  padding-left: 10px;
+  //margin: -2px;
+  
+    .placecol1 {
+      border: 1px solid #edebeb !important;
+      width:75%;
+    color: gray;
+      //margin-top: -2px;
+    // margin-bottom: -18px;
+     // max-height: 40px;
+  }
+    .placecol2{
+      border: 1px solid #edebeb !important;
+      color: gray;
+     // margin-bottom: -18px;
+  width:25%;
+   //margin-top: -2px;
+  
+  
+  //max-height: 40px;
+    }
+  }
+  .platform-ios .ptag{
+    //padding-top: -5px;
+     margin-top: -1px;
+    margin-bottom: -1px;
+     // padding-bottom: -10%;
+    
+    }
+    .platform-android .ptag{
+      margin-top: 1px;
+       margin-bottom: -1px;
+       }
+  
+  .placeorderrow{
+      padding-left: 10px;
+      color: #387ef5;
+    }
+   
+  // .placeorderspandiv{
+  //   margin-left: -100px;
+  // }

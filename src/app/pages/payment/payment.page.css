@@ -1,0 +1,105 @@
+.payment {
+  background-color: WhiteSmoke;
+}
+
+.payment ion-item {
+  background-color: WhiteSmoke;
+}
+
+.payment .text-color {
+  color: #387ef5;
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+.payment .button1 {
+  text-transform: lowercase;
+  font-size: 13px;
+  float: right;
+}
+
+.payment .ion-card ion-item {
+  background-color: white;
+  height: 20px;
+}
+
+.payment ion-label {
+  color: black;
+  font-weight: normal;
+}
+
+.payment .ion-item ion-select {
+  text-align: center;
+}
+
+.payment .align-left {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: -10px;
+  padding-bottom: -10px;
+}
+
+.payment ion-item ion-input {
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: -10px;
+  padding-bottom: -10px;
+}
+
+.payment .color1 {
+  text-align: right;
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: -10px;
+  padding-bottom: -10px;
+}
+
+.payment .color2 {
+  text-align: right;
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: -10px;
+  padding-top: -10px;
+}
+
+.paymentamount {
+  text-align: right;
+}
+
+.paymenttransaction {
+  padding-right: 80px;
+}
+
+.textboox {
+  margin-left: 20px;
+}
+
+.paymentcard {
+  height: 55px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.paymentpageionlabel b {
+  color: black;
+  padding-right: 20%;
+}
+
+.paymenttransaction b {
+  color: black;
+}
+
+.addrespayment {
+  max-height: 105px;
+  margin-top: 20px;
+  background-color: lightgray;
+}
+
+.addrespayment ion-row {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=payment.page.css.map */

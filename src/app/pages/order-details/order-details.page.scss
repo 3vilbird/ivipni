@@ -1,0 +1,88 @@
+.order-details{
+    .order ion-row {
+     width: 100%;
+   }
+   .order ion-row ion-col {
+     width: 40%;
+     float: left;
+     border: 1px solid #edebeb;
+     background-color: whitesmoke;
+   }
+   .order {
+     padding: 16px;
+     margin-top: 10px;
+   }
+   .subhead {
+     padding-top: 8px;
+   }
+   .subhead ion-row {
+     font-size: 16px;
+     color: #3d7ce2;
+     margin-left: 14px;
+     margin-right: 14px;
+   }
+   .subhead ion-row ion-col {
+     color: black;
+     border: 1px solid #edebeb !important;
+   }
+   
+   .deliverDetails1 ion-row {
+     font-size: 16px;
+     color: #3d7ce2;
+     margin-left: 14px;
+   }
+   .deliverDetails1 p {
+     margin-left: 20px;
+     margin-bottom: -5px;
+     font-size: 1.5rem;
+   }
+   // .aline {
+   //     margin-left: 5px;
+   //     margin-right: 5px;
+   //   }
+   //   .item ion-row ion-col {
+   //     border: 1.5px solid #888 !important;
+   //     padding: 3px !important;
+   //     padding-left: 5px;
+   //     padding-right: 5px;
+   //   }
+   //   .item ion-row .total {
+   //     text-align: center !important;
+   //   }
+   
+   .cartion {
+     margin-left: 100px;
+   }
+   .cart {
+     padding-left: 80%;
+     font-size: 40px;
+     color: #15a033;
+   }
+    .subhead ion-row {
+    .ordercol1 {
+       border: 1px solid #edebeb !important;
+       width:77%;
+   }
+     .ordercol2{
+       border: 1px solid #edebeb !important;
+   width:23%;
+     }
+   
+   }
+     .orderDetails ion-row{
+   padding-left: 15px;
+       
+     .ordercol1 {
+       border: 1px solid #edebeb !important;
+       width:75%;
+   }
+     .ordercol2{
+       border: 1px solid #edebeb !important;
+   width:21%;
+     }
+   }
+   
+   
+   
+   }
+   

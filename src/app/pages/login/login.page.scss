@@ -1,0 +1,68 @@
+.login {
+  background-color: white;
+  .top-container {
+    z-index: 41;
+    top: 60px;
+  }
+  .lowercontainer {
+    position: relative;
+    top: 150px;
+  }
+
+  ion-item {
+    background-color: white;
+    color: black;
+  }
+
+  ion-label {
+    color: black !important;
+  }
+
+  ion-input {
+    color: black !important;
+  }
+
+  .input-has-focus input {
+    color: black;
+  }
+
+  button {
+    background: lightblue;
+    height: 33px;
+  }
+}
+
+.text p {
+  text-decoration: none !important;
+  //color: white;
+  color: black;
+  text-align: center;
+}
+
+.image-size img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+  display: block;
+  width: 82%;
+  height: 215px;
+  padding-top: -10px;
+}
+
+.text-padding-bottom {
+  padding-top: 10px;
+  p {
+    text-padding-bottom: 40px;
+    text-align: center;
+    color: black;
+  }
+}
+
+.bg-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  width: 100%;
+}

@@ -1,0 +1,83 @@
+.payment-success-failure {
+  background-color: WhiteSmoke;
+}
+
+.payment-success-failure .success {
+  color: green;
+  font-size: 30px;
+  text-indent: 25px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.payment-success-failure ion-card {
+  background-color: white;
+}
+
+.payment-success-failure ion-col h2 b {
+  padding-left: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  text-indent: 50px;
+}
+
+.payment-success-failure ion-col h3 p {
+  font-size: 13px;
+  font-weight: normal;
+  text-indent: 50px;
+}
+
+.payment-success-failure ion-col h4 p {
+  font-size: 13px;
+  font-weight: normal;
+  text-indent: 50px;
+}
+
+.payment-success-failure .failure {
+  color: red;
+  margin-top: 1rem;
+  font-size: 20px;
+}
+
+.payment-success-failure .payfail {
+  color: lightgrey;
+}
+
+.order1 {
+  background-color: white;
+  padding: 15px;
+}
+
+.order1 .col1 p {
+  margin: -2px 10px 1px;
+  font-size: 1.2rem;
+  font-family: arial;
+  line-height: 1.2;
+  color: #393838;
+}
+
+.order1 .col2 p {
+  margin: -2px 10px 1px;
+  font-size: 1.2rem;
+  font-family: arial;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #393838;
+}
+
+.order1 .col1 b {
+  margin: -2px 10px 1px;
+  font-size: 1.6rem;
+  line-height: 1.0;
+  color: #393838;
+}
+
+.order1 .col2 b {
+  margin: -2px 10px 1px;
+  font-size: 1.6rem;
+  font-family: arial;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #393838;
+}
+/*# sourceMappingURL=payment-success-failure.page.css.map */

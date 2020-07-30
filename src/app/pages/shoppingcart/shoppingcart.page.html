@@ -1,0 +1,129 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Shopping Cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="shopping">
+  <div class="product_details" *ngFor="let item of shopingCart; let idx = index">
+    <ion-row>
+      <div *ngIf="item.image_flag != 0" class="divimageflag">
+        <img class="imagecategory"
+          src="https://www.kugellager-express.de/media/image/product/6939/lg/deep-groove-ball-bearing-6412-open-60x150x35-mm.jpg" />
+        <!-- src="{{item.image}}" /> -->
+      </div>
+      <ion-col>
+        <h5>{{item.name}}</h5>
+        <h6>{{item.model}}</h6>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="delar_name" *ngIf="item?.option.length > 1">
+      <ion-col>
+        <ion-text color="dark">
+          <h6>Seller: {{item?.option[1].value}}</h6>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row class="delar_name" *ngIf="item?.option.length > 1">
+      <ion-col>
+        <ion-text color="dark">
+          <h6>Size: {{item?.option[0].value}}</h6>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row class="delar_name" *ngIf="item?.option.length ==1">
+      <ion-col>
+        <ion-text color="dark">
+          <h6>Seller: {{item?.option[0].value}}</h6>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="price_list">
+        <p class="discount_price">{{item?.price | currency:'INR':true}}</p>
+      </ion-col>
+
+      <ion-col class="counter">
+        <!--  To do
+<counter
+          [counterValue]="myValue[idx].quantity"
+          (counterChange)="myValueChange($event,item,item?.option[0],myValue[idx].quantity);"
+        ></counter>
+        -->
+      </ion-col>
+
+      <ion-col class="delete_icon">
+        <ion-icon name="trash" (click)="deletItem(item);"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="quantityDebug[idx].product_quantity_count">
+      <ion-icon name="alert" class="iocon_alert"></ion-icon>
+      <ion-col>
+        <p class="remove_quantity">
+          This product is not available, remove from cart.
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="item.product_status == 0">
+      <ion-icon name="alert" class="iocon_alert"></ion-icon>
+      <ion-col>
+        <p class="remove_quantity">
+          This product is not available, remove from cart.
+        </p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="quantityDebug[idx].product_quantity_available">
+      <ion-icon name="alert" class="iocon_alert"></ion-icon>
+      <ion-col>
+        <p class="available_quantity">
+          The quantity available is {{item?.option[0].quantity}}, change the
+          quantity.
+        </p>
+      </ion-col>
+    </ion-row>
+    <div class="shopingcartdiscount" *ngIf="item?.option.length > 1">
+      {{item?.option[1].sellerdiscount}}
+    </div>
+    <div class="shopingcartdiscount" *ngIf="item?.option.length == 1">
+      {{item?.option[0].sellerdiscount}}
+    </div>
+  </div>
+
+  <ion-card class="shopingcartaddress" *ngIf="shopingCart.length > 0">
+    <div *ngFor="let cost of allTotal">
+      <ion-row class="addressrow">
+        <ion-col>
+          {{cost.title}}
+        </ion-col>
+        <ion-col>
+          {{cost.value | currency:'INR':true}}
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-card>
+
+  <div *ngIf="shoppingCartCount" class="empty_cart">
+    <ion-row class="cart_icon">
+      <ion-icon name="cart"></ion-icon>
+    </ion-row>
+    <ion-label class="ion-text-wrap">
+      Your cart is empty!
+    </ion-label>
+    <ion-button small class="ion-margin" expand="full" shape="round" (click)="backToHome()">
+      Start shopping
+    </ion-button>
+  </div>
+</ion-content>
+
+<ion-footer *ngIf="shopingCart.length > 0">
+  <ion-toolbar>
+    <ion-button small class="ion-margin" (click)="checkoutNav()" shape="round" expand="full">Checkout</ion-button>
+  </ion-toolbar>
+</ion-footer>

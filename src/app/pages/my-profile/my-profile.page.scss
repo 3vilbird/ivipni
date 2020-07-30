@@ -1,0 +1,36 @@
+.my-profile {
+    ion-list {
+      padding: 8px;
+    }
+    ion-row {
+      border: 1px solid whitesmoke;
+      padding: 3px;
+      font-size: 1.4rem;
+    }
+  
+    ion-col[width-40] {
+      float: left;
+      padding: 5px;
+      color: #85888a;
+    }
+    ion-col[width-60] {
+      float: left;
+      padding: 5px;
+    }
+  
+    ion-col[width-60] p {
+      white-space: normal;
+      word-break: break-all;
+    }
+    background-color: WhiteSmoke;
+  
+    .item-color {
+      background-color: WhiteSmoke;
+      color: black;
+      text-align: center;
+      height: 5px;
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+  }
+  

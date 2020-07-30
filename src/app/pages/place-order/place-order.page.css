@@ -1,0 +1,115 @@
+.placeorder button {
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.placeorder .card-md {
+  line-height: 2.0;
+}
+
+.placeorder .card-ios {
+  line-height: 2.0;
+}
+
+.placeorder .card-md p {
+  margin-right: 0;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 2.0;
+}
+
+.placeorder .card-ios p {
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 2.0;
+}
+
+.placeorder .addresplaceorder {
+  margin-top: 20px;
+  background-color: lightgray;
+}
+
+.placeorder ion-card div ion-row .clas1 {
+  margin-bottom: -10px;
+  color: black;
+}
+
+.placeorder ion-card div ion-row .clas2 {
+  margin-bottom: -25px;
+}
+
+.placeorder ion-card div ion-row .clas3 {
+  margin-bottom: -20px;
+}
+
+.placeorder .row p {
+  padding-left: 15px;
+  padding: 5px;
+}
+
+.placeorder ion-card div ion-row .clas4 {
+  margin-bottom: -15px;
+}
+
+.placeorder .dataname {
+  width: 20px;
+}
+
+.placeorder ion-card {
+  margin-top: -10px;
+}
+
+.placeorder .clas3place {
+  margin-right: -100px;
+}
+
+.aline ion-row {
+  padding-left: 10px;
+}
+
+.aline ion-row .placecol1 {
+  border: 1px solid #edebeb !important;
+  width: 75%;
+}
+
+.aline ion-row .placecol2 {
+  border: 1px solid #edebeb !important;
+  width: 25%;
+}
+
+.item ion-row {
+  padding-left: 10px;
+}
+
+.item ion-row .placecol1 {
+  border: 1px solid #edebeb !important;
+  width: 75%;
+  color: gray;
+}
+
+.item ion-row .placecol2 {
+  border: 1px solid #edebeb !important;
+  color: gray;
+  width: 25%;
+}
+
+.platform-ios .ptag {
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+
+.platform-android .ptag {
+  margin-top: 1px;
+  margin-bottom: -1px;
+}
+
+.placeorderrow {
+  padding-left: 10px;
+  color: #387ef5;
+}
+/*# sourceMappingURL=place-order.page.css.map */

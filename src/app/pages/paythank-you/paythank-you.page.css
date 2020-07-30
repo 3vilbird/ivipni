@@ -1,0 +1,79 @@
+.thank-you {
+  background-color: WhiteSmoke;
+}
+
+.thank-you .success {
+  color: green;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.thank-you p.success_text {
+  margin: auto;
+}
+
+.thank-you p.order_text {
+  margin: auto;
+}
+
+.thank-you .failure {
+  color: red;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.thank-you .ion-item1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.thank-you .ion-item2 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.thank-you .ion-item ion-col {
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  border: 1px solid black;
+  padding: 1px 0 0px 0;
+  margin: 0.8px;
+  text-indent: 5px;
+  background-color: WhiteSmoke;
+}
+
+.thank-you .header {
+  font-size: 15px;
+  font-weight: bold;
+  color: #387ef5;
+  padding-bottom: 15px;
+}
+
+.thank-you .background {
+  padding-top: 10px;
+}
+
+.thank-you .deliver-details {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.thank-you .deliver-details_2 {
+  margin-top: -20px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.thank-you .contact_details_place {
+  padding-top: 5px;
+}
+
+.thank-you .contact-mail {
+  font-weight: normal;
+  font-size: 13px;
+  margin-top: -10px !important;
+  margin-bottom: 8px;
+}
+/*# sourceMappingURL=paythank-you.page.css.map */

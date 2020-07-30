@@ -1,0 +1,81 @@
+.paymentremaindetails {
+  background-color: WhiteSmoke;
+}
+
+.paymentremaindetails ion-item {
+  background-color: WhiteSmoke;
+}
+
+.paymentremaindetails .text-color {
+  color: #387ef5;
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+.paymentremaindetails .button1 {
+  text-transform: lowercase;
+  font-size: 13px;
+  float: right;
+}
+
+.paymentremaindetails .ion-card ion-item {
+  background-color: white;
+  height: 20px;
+}
+
+.paymentremaindetails .align-left {
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: -10px;
+  padding-bottom: -10px;
+}
+
+.paymentremaindetails .align-right {
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: -10px;
+  padding-bottom: -10px;
+}
+
+.paymentremaindetails .color1 {
+  text-align: left;
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: -10px;
+  padding-bottom: -10px;
+}
+
+.paymentremaindetails .color2 {
+  text-align: right;
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: -10px;
+  padding-top: -10px;
+}
+
+.paymentremaindetails .cardtotal {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.optionselectpay {
+  text-align: right;
+}
+
+.transactionid {
+  padding-right: 80px;
+  color: black;
+}
+
+.transactionpay {
+  margin-left: 40px;
+}
+
+.date {
+  color: black;
+}
+/*# sourceMappingURL=paymentremaindetails.page.css.map */

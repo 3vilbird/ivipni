@@ -1,0 +1,78 @@
+.order-details .order ion-row {
+  width: 100%;
+}
+
+.order-details .order ion-row ion-col {
+  width: 40%;
+  float: left;
+  border: 1px solid #edebeb;
+  background-color: whitesmoke;
+}
+
+.order-details .order {
+  padding: 16px;
+  margin-top: 10px;
+}
+
+.order-details .subhead {
+  padding-top: 8px;
+}
+
+.order-details .subhead ion-row {
+  font-size: 16px;
+  color: #3d7ce2;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.order-details .subhead ion-row ion-col {
+  color: black;
+  border: 1px solid #edebeb !important;
+}
+
+.order-details .deliverDetails1 ion-row {
+  font-size: 16px;
+  color: #3d7ce2;
+  margin-left: 14px;
+}
+
+.order-details .deliverDetails1 p {
+  margin-left: 20px;
+  margin-bottom: -5px;
+  font-size: 1.5rem;
+}
+
+.order-details .cartion {
+  margin-left: 100px;
+}
+
+.order-details .cart {
+  padding-left: 80%;
+  font-size: 40px;
+  color: #15a033;
+}
+
+.order-details .subhead ion-row .ordercol1 {
+  border: 1px solid #edebeb !important;
+  width: 77%;
+}
+
+.order-details .subhead ion-row .ordercol2 {
+  border: 1px solid #edebeb !important;
+  width: 23%;
+}
+
+.order-details .orderDetails ion-row {
+  padding-left: 15px;
+}
+
+.order-details .orderDetails ion-row .ordercol1 {
+  border: 1px solid #edebeb !important;
+  width: 75%;
+}
+
+.order-details .orderDetails ion-row .ordercol2 {
+  border: 1px solid #edebeb !important;
+  width: 21%;
+}
+/*# sourceMappingURL=order-details.page.css.map */

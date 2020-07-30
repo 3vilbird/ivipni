@@ -1,0 +1,201 @@
+ion-label.label-ios {
+    padding-top: 10px;
+    margin: 0px;
+  }
+  
+  ion-col {
+    padding-top: 12px;
+  }
+  
+  .shopping {
+    background-color: WhiteSmoke;
+  
+    ion-card {
+      background: #f3f2f2;
+      font-size: -1px;
+    }
+    p.available_quantity {
+      color: red;
+    }
+    p.remove_quantity {
+      color: red;
+    }
+  
+    .iocon_alert {
+      color: red;
+      padding-top: 10px;
+    }
+  
+    .image_div {
+      width: 25%;
+      float: left;
+      p {
+        font-size: 20px;
+        margin-top: 30px;
+      }
+      //border: 2px solid #dedede;
+      img {
+        padding-top: 30px;
+      }
+    }
+    .item {
+      //margin-right: 25px;
+      margin-left: -180px;
+    }
+    .product_details {
+      //float:left;
+      border-bottom: 1px solid #bfbcbc;
+      margin-bottom: 8px;
+      margin-left: 5px;
+  
+      h6 {
+        font-size: 12px;
+        margin-top: 1px;
+      }
+  
+      ion-col.counter {
+        margin-left: 20px;
+      }
+      p.orginal_price {
+        text-decoration: line-through;
+      }
+      p.discount_price {
+        font-weight: bold;
+      }
+      ion-col.delete_icon {
+        font-size: 20px;
+        color: #bdbdbd;
+        padding-left: 10px;
+        //float: right;
+        margin-right: 35px;
+      }
+  
+      .delar_name {
+        padding-top: -2px;
+      }
+    }
+  }
+  // .col{
+  // 	margin:4px;
+  // }
+  
+  ion-col[width-50] {
+    font-size: 17px;
+    color: white;
+    //padding-left: 40px;
+    text-align: center;
+  }
+  
+  .empty_cart {
+    text-align: center;
+    color: #5f5e5e;
+    padding-top: 15px;
+  
+    .cart_icon {
+      ion-icon {
+        margin: auto;
+        display: block;
+        color: #5f5e5e;
+        font-size: 30px;
+      }
+    }
+    .button_home {
+      button {
+        margin: auto;
+        display: block;
+        background-color: #fe5919;
+      }
+    }
+  
+    //    ion-icon.icon-ios.ion-ios-trash {
+    //     padding-left: 17px;
+    //     /* font-size: 30px; */
+    // }
+  
+    // ion-icon.icon-ios.ion-ios-trash {
+    //     padding-left: 10px;
+    // }
+    //    ion-icon.icon-md.ion-md-trash {
+    //     padding-left: 10px;
+    // }
+  
+    // ion-row.footer_color {
+    //     height: 45px;
+    // }
+  }
+  
+  ion-icon.icon-ios.ion-ios-trash {
+    /* padding-left: 19px; */
+    float: right;
+  }
+  
+  ion-icon.icon-md.ion-md-trash {
+    /* padding-left: 19px; */
+    float: right;
+  }
+  
+  ion-row.footer_color {
+    margin-top: -4px;
+    height: 45px;
+    color: white;
+    margin-left: 40px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .checkout {
+    margin-top: 15px;
+  }
+  
+  .toolbar-ios-favorite .toolbar-background-ios {
+    border-color: #02bf2c;
+    background: #02bf2c;
+  }
+  
+  .toolbar-md-favorite .toolbar-background-md {
+    border-color: #02bf2c;
+    background: #02bf2c;
+  }
+  
+  .toast-md .toast-wrapper {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    margin: auto;
+    width: 85%;
+    max-width: 700px;
+    border-radius: 35px;
+    background: gray;
+    /* color: black; */
+  }
+  
+  .toast-md .toast-message {
+    padding: 19px 16px 17px;
+    font-size: 1.5rem;
+    /* color: #fff; */
+    text-align: center;
+  }
+  .shopingcartaddress {
+    max-height: 105px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .addressrow {
+    margin-top: 8px;
+  }
+  .shopingcartdiscount{
+     color: blue;
+  
+  }
+  .imagecategory{
+    width: 47%;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+  }
+  .divimageflag{
+        margin-left: -10px;
+      margin-right: -57px;
+  }

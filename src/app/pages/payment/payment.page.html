@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Payment Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <div *ngIf="paymenttype">
+      <ion-list radio-group [(ngModel)]="paymentMethods" ngDefaultControl>
+        <ion-item>
+          <ion-label
+            >Online Payment <b>(₹{{totalamount}})</b>
+            <p><small>(Incl 2% extra)</small></p>
+          </ion-label>
+          <ion-radio value="Online Payment" (click)="onlinepay()"></ion-radio>
+        </ion-item>
+        <!-- <ion-item>
+          <ion-label>Bank Transfer <b>(₹{{onlineamount}})</b>
+            <p><small>(NEFT/RTGS/IMPS)</small></p>
+          </ion-label>
+          <ion-radio value="Bank Transfer" (click)="change()"></ion-radio>
+        </ion-item> -->
+
+        <ion-item>
+          <ion-label
+            >COD <b>(₹{{totalamount}})</b>
+            <p><small>(Incl 2% extra)</small></p>
+          </ion-label>
+          <ion-radio value="COD" (click)="placeOrderforCod()"></ion-radio>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-card>
+  <ion-card class="ion-card" *ngIf="paymentmodeltype">
+    <ion-item>
+      <ion-label color="primary">Select Bank</ion-label>
+      <ion-select
+        [interfaceOptions]="selectOptions"
+        (ionChange)="optionsFn($event);"
+      >
+        <ion-select-option [value]="item" *ngFor="let item of bankdata">
+          <span>{{item.bank_name}}</span>
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+  <ion-card class="ion-card">
+    <div *ngIf="paymentmodeltype">
+      <ion-item>
+        <ion-label>
+          <h2><b>Bank Transaction Details</b></h2>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label class="paymentpageionlabel"><b>Date :</b> </ion-label>
+        <ion-label class="paymentamount">
+          <!-- TODO please do fix it bug  -->
+          <!-- <span [(value)]="localDate" [max]="datetoday" clear class="ScheduleDate"> -->
+          <span
+            >{{localDate | date: 'dd/MM/yyyy'}}
+            <ion-icon name="clipboard" item-left></ion-icon>
+          </span>
+          <!-- </span> -->
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label><b>Amount :</b> </ion-label>
+        <ion-label class="paymentamount"
+          ><b>{{onlineamount | currency:'INR':true}}</b></ion-label
+        >
+      </ion-item>
+      <ion-item [(ngModel)]="twentyfivetransaction_id" ngDefaultControl>
+        <ion-label class="paymenttransaction"
+          ><b>Transaction Id:</b>
+        </ion-label>
+        <ion-input
+          class="textboox"
+          type="text"
+          placeholder="XXXXXXXXX"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'XXXXXXXXXX'"
+        ></ion-input>
+      </ion-item>
+    </div>
+  </ion-card>
+</ion-content>
+
+<ion-footer *ngIf="caseondelivery">
+  <ion-toolbar>
+    <ion-button (click)="placeOrderforCod()">
+      <b> PLACE ORDER </b>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
+
+<ion-footer *ngIf="paymentmodeltype">
+  <ion-toolbar>
+    <ion-button (click)="placeOrders()">
+      <b> PLACE ORDER </b>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

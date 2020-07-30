@@ -1,0 +1,72 @@
+<ion-card>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Payment History</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-card>
+
+<ion-content class="payment-success-failure">
+  <div *ngIf="paymentSuccess">
+    <ion-card class="order1" *ngFor="let payment of paymentSuccessFailure" (click)="paymentdetail(payment)">
+      <ion-row>
+        <ion-col class="col1">
+          <p>Order Id:</p>
+        </ion-col>
+        <ion-col class="col2">
+          <p> {{payment.order_id}} </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="col1">
+          <p>Status:</p>
+        </ion-col>
+        <ion-col class="col2">
+          <p>{{payment.status}}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="col1">
+          <p>Amount:</p>
+        </ion-col>
+        <ion-col class="col2">
+          <p>{{payment.total | currency:'INR':true}}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="col1">
+          <p>Order Date:</p>
+        </ion-col>
+        <ion-col class="col2">
+          <p>{{payment.date_added}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
+  
+  <div *ngIf="paymentFailure">
+    <ion-card *ngFor="let payment of paymentSuccessFailure">
+      <ion-row>
+        <ion-col>
+          <ion-item lines="none">
+            <ion-icon slot="start" name="close-circle" class="failure"></ion-icon>
+            <h3>{{payment.order_id}}</h3>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <h3>123{{payment.payment_method}}</h3>
+        </ion-col>
+        <ion-col>
+          <h3>{{payment.total | currency:'INR':true}}</h3>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
+
+  <div *ngIf="paymentSuccessFailureCount">
+    <h1 class="payfail"><b>No record found</b></h1>
+  </div>
+</ion-content>

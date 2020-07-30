@@ -1,0 +1,53 @@
+<ion-content padding class="login">
+  <ion-card class="top-container">
+    <div class="image-size">
+      <img src="../../../assets/images/Login.png" />
+    </div>
+  </ion-card>
+  <div padding></div>
+  <div class="lowercontainer">
+    <form [formGroup]="myForm" (ngSubmit)="submit()">
+      <ion-item>
+        <ion-label position="stacked">Email or Mobile</ion-label>
+        <ion-input
+          type="text"
+          id="username"
+          class="form-control"
+          formControlName="username"
+          aria-placeholder="email"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input
+          type="password"
+          id="password"
+          class="form-control"
+          formControlName="password"
+        ></ion-input>
+      </ion-item>
+      <p>{{loginMsg}}</p>
+      <div padding></div>
+      <ion-button
+        round
+        color="light"
+        type="submit"
+        [disabled]="!myForm.valid"
+        expand="block"
+        >LOGIN</ion-button
+      >
+      <br />
+    </form>
+    <div class="text" (click)="forgotPasswd()">
+      <p>Forgot your password ?</p>
+    </div>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="registration();">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <img class="bg-header" src="../../../assets/bg-header.png" alt="" />
+</ion-content>

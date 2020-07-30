@@ -1,0 +1,71 @@
+.login {
+  background-color: white;
+}
+
+.login .top-container {
+  z-index: 41;
+  top: 60px;
+}
+
+.login .lowercontainer {
+  position: relative;
+  top: 150px;
+}
+
+.login ion-item {
+  background-color: white;
+  color: black;
+}
+
+.login ion-label {
+  color: black !important;
+}
+
+.login ion-input {
+  color: black !important;
+}
+
+.login .input-has-focus input {
+  color: black;
+}
+
+.login button {
+  background: lightblue;
+  height: 33px;
+}
+
+.text p {
+  text-decoration: none !important;
+  color: black;
+  text-align: center;
+}
+
+.image-size img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+  display: block;
+  width: 82%;
+  height: 215px;
+  padding-top: -10px;
+}
+
+.text-padding-bottom {
+  padding-top: 10px;
+}
+
+.text-padding-bottom p {
+  text-padding-bottom: 40px;
+  text-align: center;
+  color: black;
+}
+
+.bg-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  width: 100%;
+}
+/*# sourceMappingURL=login.page.css.map */

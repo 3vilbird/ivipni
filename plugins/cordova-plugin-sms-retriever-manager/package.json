@@ -1,0 +1,62 @@
+{
+  "_from": "cordova-plugin-sms-retriever-manager",
+  "_id": "cordova-plugin-sms-retriever-manager@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-4mP3NKHcsLC8C33rh3DAlVBwUu7ihH1N4KuDOagRwztHqtRdewOt35NJXw7122k9r+Lvovt0TyP7SR82nBGL8A==",
+  "_location": "/cordova-plugin-sms-retriever-manager",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-sms-retriever-manager",
+    "name": "cordova-plugin-sms-retriever-manager",
+    "escapedName": "cordova-plugin-sms-retriever-manager",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-sms-retriever-manager/-/cordova-plugin-sms-retriever-manager-1.0.2.tgz",
+  "_shasum": "c3acc110f3cb86682a632ebd99bcdcf176f07896",
+  "_spec": "cordova-plugin-sms-retriever-manager",
+  "_where": "/home/devil/volume/projects/freelancingwork/new_work/ivipni-1",
+  "author": {
+    "name": "Haresh Hanat"
+  },
+  "bugs": {
+    "url": "https://github.com/hanatharesh2712/ionic-native-sms-retriever-plugin-master/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-sms-retriever-manager",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cross-platform plugin for Cordova / PhoneGap to to easily retrive SMS using Google SMS retriver API. Available for Android.",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/hanatharesh2712/ionic-native-sms-retriever-plugin-master",
+  "keywords": [
+    "cordova",
+    "phonegap",
+    "sms",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "DEV",
+  "name": "cordova-plugin-sms-retriever-manager",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanatharesh2712/ionic-native-sms-retriever-plugin-master.git"
+  },
+  "version": "1.0.2"
+}

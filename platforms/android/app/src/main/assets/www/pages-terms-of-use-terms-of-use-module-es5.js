@@ -1,0 +1,255 @@
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["pages-terms-of-use-terms-of-use-module"], {
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/terms-of-use/terms-of-use.page.html":
+  /*!*************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/pages/terms-of-use/terms-of-use.page.html ***!
+    \*************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppPagesTermsOfUseTermsOfUsePageHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<ion-header>\n  <ion-toolbar>\n    <ion-nav color=\"primary\">\n      <ion-title>Terms Of Use</ion-title>\n  </ion-nav>  \n</ion-toolbar>\n</ion-header>\n\n\n<ion-content padding class=\"terms-of-use\">\n\n  <ion-list>\n      <p>Auto Parts Terms Of Use:-</p>\n\n      <ion-item no-lines text-wrap>\n          \"Except as Otherwise expression stated with respect to our products all contents of the site are offered on an as is basis without any warranty whatsever either express or implied.\"\n      </ion-item>\n\n      <p>Copyright and Trademark:-</p>\n\n      <ion-item no-lines text-wrap>\n          \"Unless otherwise noted, all materials on this site are protected as the copyrights,trade dress,trademarks and/or other intellectual properties owned by Auto Parts.\"\n      </ion-item>\n\n  </ion-list>\n</ion-content>";
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/terms-of-use/terms-of-use-routing.module.ts":
+  /*!*******************************************************************!*\
+    !*** ./src/app/pages/terms-of-use/terms-of-use-routing.module.ts ***!
+    \*******************************************************************/
+
+  /*! exports provided: TermsOfUsePageRoutingModule */
+
+  /***/
+  function srcAppPagesTermsOfUseTermsOfUseRoutingModuleTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "TermsOfUsePageRoutingModule", function () {
+      return TermsOfUsePageRoutingModule;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _terms_of_use_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./terms-of-use.page */
+    "./src/app/pages/terms-of-use/terms-of-use.page.ts");
+
+    var routes = [{
+      path: '',
+      component: _terms_of_use_page__WEBPACK_IMPORTED_MODULE_3__["TermsOfUsePage"]
+    }];
+
+    var TermsOfUsePageRoutingModule = function TermsOfUsePageRoutingModule() {
+      _classCallCheck(this, TermsOfUsePageRoutingModule);
+    };
+
+    TermsOfUsePageRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(routes)],
+      exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+    })], TermsOfUsePageRoutingModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/terms-of-use/terms-of-use.module.ts":
+  /*!***********************************************************!*\
+    !*** ./src/app/pages/terms-of-use/terms-of-use.module.ts ***!
+    \***********************************************************/
+
+  /*! exports provided: TermsOfUsePageModule */
+
+  /***/
+  function srcAppPagesTermsOfUseTermsOfUseModuleTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "TermsOfUsePageModule", function () {
+      return TermsOfUsePageModule;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @ionic/angular */
+    "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
+    /* harmony import */
+
+
+    var _terms_of_use_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./terms-of-use-routing.module */
+    "./src/app/pages/terms-of-use/terms-of-use-routing.module.ts");
+    /* harmony import */
+
+
+    var _terms_of_use_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./terms-of-use.page */
+    "./src/app/pages/terms-of-use/terms-of-use.page.ts");
+
+    var TermsOfUsePageModule = function TermsOfUsePageModule() {
+      _classCallCheck(this, TermsOfUsePageModule);
+    };
+
+    TermsOfUsePageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"], _terms_of_use_routing_module__WEBPACK_IMPORTED_MODULE_5__["TermsOfUsePageRoutingModule"]],
+      declarations: [_terms_of_use_page__WEBPACK_IMPORTED_MODULE_6__["TermsOfUsePage"]]
+    })], TermsOfUsePageModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/terms-of-use/terms-of-use.page.scss":
+  /*!***********************************************************!*\
+    !*** ./src/app/pages/terms-of-use/terms-of-use.page.scss ***!
+    \***********************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppPagesTermsOfUseTermsOfUsePageScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".terms-of-use {\n  background-color: WhiteSmoke;\n}\n.terms-of-use p {\n  color: #387ef5;\n  font-weight: normal;\n}\n.terms-of-use ion-item {\n  background-color: WhiteSmoke;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RldmlsL3ZvbHVtZS9wcm9qZWN0cy9mcmVlbGFuY2luZ3dvcmsvbmV3X3dvcmsvaXZpcG5pLTEvc3JjL2FwcC9wYWdlcy90ZXJtcy1vZi11c2UvdGVybXMtb2YtdXNlLnBhZ2Uuc2NzcyIsInNyYy9hcHAvcGFnZXMvdGVybXMtb2YtdXNlL3Rlcm1zLW9mLXVzZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSw0QkFBQTtBQ0NKO0FEQ0k7RUFDRSxjQUFBO0VBQ0EsbUJBQUE7QUNDTjtBREVJO0VBQ0UsNEJBQUE7QUNBTiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3Rlcm1zLW9mLXVzZS90ZXJtcy1vZi11c2UucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnRlcm1zLW9mLXVzZSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogV2hpdGVTbW9rZTtcbiAgXG4gICAgcCB7XG4gICAgICBjb2xvcjogIzM4N2VmNTtcbiAgICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gICAgfVxuICBcbiAgICBpb24taXRlbSB7XG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiBXaGl0ZVNtb2tlO1xuICAgIH1cbiAgfVxuICAiLCIudGVybXMtb2YtdXNlIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogV2hpdGVTbW9rZTtcbn1cbi50ZXJtcy1vZi11c2UgcCB7XG4gIGNvbG9yOiAjMzg3ZWY1O1xuICBmb250LXdlaWdodDogbm9ybWFsO1xufVxuLnRlcm1zLW9mLXVzZSBpb24taXRlbSB7XG4gIGJhY2tncm91bmQtY29sb3I6IFdoaXRlU21va2U7XG59Il19 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/pages/terms-of-use/terms-of-use.page.ts":
+  /*!*********************************************************!*\
+    !*** ./src/app/pages/terms-of-use/terms-of-use.page.ts ***!
+    \*********************************************************/
+
+  /*! exports provided: TermsOfUsePage */
+
+  /***/
+  function srcAppPagesTermsOfUseTermsOfUsePageTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "TermsOfUsePage", function () {
+      return TermsOfUsePage;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @ionic/angular */
+    "./node_modules/@ionic/angular/fesm2015/ionic-angular.js"); // all clear
+
+
+    var TermsOfUsePage =
+    /*#__PURE__*/
+    function () {
+      function TermsOfUsePage(navCtrl) {
+        _classCallCheck(this, TermsOfUsePage);
+
+        this.navCtrl = navCtrl;
+      }
+
+      _createClass(TermsOfUsePage, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return TermsOfUsePage;
+    }();
+
+    TermsOfUsePage.ctorParameters = function () {
+      return [{
+        type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"]
+      }];
+    };
+
+    TermsOfUsePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: "app-terms-of-use",
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./terms-of-use.page.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/terms-of-use/terms-of-use.page.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./terms-of-use.page.scss */
+      "./src/app/pages/terms-of-use/terms-of-use.page.scss")).default]
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"]])], TermsOfUsePage);
+    /***/
+  }
+}]);
+//# sourceMappingURL=pages-terms-of-use-terms-of-use-module-es5.js.map

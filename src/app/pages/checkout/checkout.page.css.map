@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,SADK,CACL,QAAQ,CAAC;EACP,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,IAAI;CAChB;;AAJL,AAMI,SANK,CAML,EAAE,CAAC;EACD,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,IAAI;CAChB;;AATL,AAWI,SAXK,CAWL,EAAE,CAAC;EACD,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,IAAI;CAChB;;AAdL,AAgBI,SAhBK,CAgBL,QAAQ,CAAC;EACP,KAAK,EAAE,KAAK;CACb",
+    "sources": [
+        "checkout.page.scss"
+    ],
+    "names": [],
+    "file": "checkout.page.css"
+}

@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Seller Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-color">
+  <div *ngIf="sellerinfo">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>
+          {{company_name}}
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-avatar slot="end">
+            <!--replace the below image by   {{profile_image}}-->
+            <img src="{{profile_image}}" />
+          </ion-avatar>
+          <ion-label>
+            <h3>Company Address</h3>
+            <p>{{firstname1}} {{lastname1}}</p>
+            <p>{{addressline1}}, {{addressline2}}</p>
+            <p>{{city1}}</p>
+            <p>{{state1}}, {{postcode1}}</p>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2 class="ion-padding-bottom">Contact Person</h2>
+            <h3>{{firstname}} {{lastname}}</h3>
+            <ion-item lines="none">
+              <ion-icon name="mail-open" class="ion-padding-end"></ion-icon>
+              <ion-label>{{email_id}}</ion-label>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-icon name="call" class="ion-padding-end"></ion-icon>
+              <ion-label>{{phonenumber}}</ion-label>
+            </ion-item>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Documents</h2>
+            <h3><a href="{{gst_image}}">GST Information</a></h3>
+            <h3><a href="{{pan_image}}">Pan Card Information</a></h3>
+          </ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

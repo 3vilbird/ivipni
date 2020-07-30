@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,qBAAqB,CAAC;EACpB,gBAAgB,EAAE,UAAU;CA2B7B;;AA5BD,AAGE,qBAHmB,CAGnB,GAAG,CAAC;EACF,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;CAGZ;;AARH,AAyBE,qBAzBmB,CAyBnB,QAAQ,CAAC;EACP,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "product-sub-category.page.scss"
+    ],
+    "names": [],
+    "file": "product-sub-category.page.css"
+}

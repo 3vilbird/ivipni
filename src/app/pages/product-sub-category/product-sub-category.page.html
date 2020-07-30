@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-nav color="primary" padding>
+      <ion-title>{{headerName}}</ion-title>
+      <ion-button (click)="quickOrderFn();" end>
+        <ion-icon name="search"></ion-icon>
+      </ion-button>
+    </ion-nav>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="product-sub-category">
+  <ion-item
+    *ngFor="let catNames of catName "
+    (click)="subcategoryName(catNames);"
+  >
+    <ion-card>
+      <ion-row>
+        <ion-col> <img src="{{catNames.image}}" /> </ion-col>
+        <ion-col class="text-align">{{catNames.sub_category_name}}</ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-item>
+</ion-content>

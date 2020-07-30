@@ -1,0 +1,91 @@
+<!--
+  Generated template for the OrderDetailsPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+          </ion-buttons>
+        <ion-title>Order Details</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="order-details">
+    <div class="order">
+        <ion-row>
+            <ion-col>Order Number</ion-col>
+            <ion-col>{{order_id}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>Date</ion-col>
+            <ion-col>{{date_added}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>Total</ion-col>
+            <ion-col>{{total | currency:'INR':true}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>Payment Method</ion-col>
+            <ion-col>{{payment_method}}</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>Status</ion-col>
+            <ion-col>{{name}}</ion-col>
+        </ion-row>
+    </div>
+    <div>
+        <ion-item>
+            <ion-label><b>Order Details</b></ion-label>
+            <ion-icon name="cart" color="success" slot="end" (click)="addToCart(order_id)"></ion-icon>
+        </ion-item>
+        <ion-row class="ion-margin">
+            <ion-col size="8"><b>Products</b></ion-col>
+            <ion-col size="4"><b>Total</b></ion-col>
+        </ion-row>
+        <ion-item class="ion-margin" *ngFor="let orderDetails of productsArray">
+            <ion-row>
+                <ion-col size="8">{{orderDetails.name}} -{{orderDetails.model}} ({{orderDetails.quantity}} x {{orderDetails.price}})
+                    <div *ngIf="orderDetails.option.length >1">(Size:{{orderDetails.option[0].value}})</div>
+                    <div *ngIf="orderDetails.option.length == 1">{{orderDetails.option[0].value}}</div>
+                    <div *ngIf="orderDetails.option.length >1">{{orderDetails.option[1].value}}-{{orderDetails.option[0].value}}</div>
+                </ion-col>
+                <ion-col size="4">{{orderDetails.total | currency:'INR':true}}</ion-col>
+            </ion-row>
+        </ion-item>
+    </div>
+    <ion-card *ngFor="let cost of orderTotals">
+        <ion-row class="backgroundTotals">
+            <ion-col size="8" class="orderTotalsTitle">
+                {{cost.title}}
+            </ion-col>
+            <ion-col size="4" class="orderTotals">
+                {{cost.value | currency:'INR':true}}
+            </ion-col>
+        </ion-row>
+    </ion-card>
+    <hr>
+    <ion-card>
+        <ion-card-header>
+            <ion-title>Delivery Details</ion-title>
+        </ion-card-header>
+        <ion-item>
+            <ion-label>
+                <h3>{{firstname}} {{lastname}}</h3>
+                <h3>{{payment_company}}</h3>
+                <h3>{{payment_address_1}}</h3>
+                <h3>{{payment_address_2}}</h3>
+                <h3>{{payment_city}}, {{payment_zone}}, {{payment_postcode}}</h3>
+                <ion-item lines="none">
+                    <ion-icon name="mail-open" class="ion-padding-end"></ion-icon>
+                    <ion-label>{{email}}</ion-label>
+                </ion-item>
+                <ion-item lines="none">
+                    <ion-icon name="call" class="ion-padding-end"></ion-icon>
+                    <ion-label>{{telephone}}</ion-label>
+                </ion-item>
+            </ion-label>
+        </ion-item>
+    </ion-card>
+</ion-content>

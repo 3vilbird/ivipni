@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+          </ion-buttons>
+        <ion-title>My Orders</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="my-order">
+    <ion-card class="order1" *ngFor="let order of myOrder" (click)="orderdetail(order)">
+        <ion-row>
+            <ion-col class="col1"><p>Order Id:</p>
+            </ion-col>
+            <ion-col class="col2"><p>{{order.order_id}}</p>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="col1">
+                <p>Status:</p>
+            </ion-col>
+            <ion-col class="col2">
+                <p>{{order.name}}</p>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="col1">
+                <p>Amount:</p>
+            </ion-col>
+            <ion-col class="col2">
+                <p>{{order.total | currency:'INR':true}}</p>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="col1">
+                <p>Date:</p>
+            </ion-col>
+            <ion-col class="col2">
+                <p>{{order.date_added}}</p>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+
+    <div *ngIf="myOrderCount">
+        <ion-item class="myordernoproducts">
+            <h1><b>No record found </b></h1>
+        </ion-item>
+    </div>
+</ion-content>

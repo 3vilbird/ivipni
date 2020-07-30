@@ -1,0 +1,13 @@
+.product-sub-category {
+  background-color: WhiteSmoke;
+}
+
+.product-sub-category img {
+  height: 50px;
+  width: 50px;
+}
+
+.product-sub-category ion-card {
+  width: 100%;
+}
+/*# sourceMappingURL=product-sub-category.page.css.map */

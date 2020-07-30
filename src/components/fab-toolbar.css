@@ -1,0 +1,214 @@
+fab-toolbar.right {
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+fab-toolbar.right button[ion-fab] {
+  margin-right: 5px;
+  float: right;
+}
+
+fab-toolbar.left {
+  left: 0;
+}
+
+fab-toolbar.left button[ion-fab] {
+  margin-left: 5px;
+  float: left;
+}
+
+fab-toolbar {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  -webkit-transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+}
+
+fab-toolbar .backdrop {
+  display: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  position: absolute;
+}
+
+fab-toolbar .fab-toolbar {
+  height: 75%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  margin-top: 15px;
+}
+
+fab-toolbar .fab-toolbar ion-row {
+  position: absolute;
+  display: none;
+}
+
+fab-toolbar .fab-toolbar ion-row ion-col button div {
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+fab-toolbar .fab-toolbar ion-row ion-col.icon-and-title ion-icon {
+  font-size: 20px;
+}
+
+fab-toolbar .fab-toolbar ion-row ion-col.icon-and-title label {
+  font-size: 10px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+fab-toolbar .fab-toolbar button[ion-fab] {
+  -webkit-transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+fab-toolbar .fab-toolbar button[ion-fab] ion-icon {
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+fab-toolbar:not(.activated) {
+  width: 68px;
+}
+
+fab-toolbar.activated {
+  width: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+fab-toolbar.activated .backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  top: 0;
+  left: 0;
+  padding-top: 160%;
+  padding-left: 80%;
+}
+
+fab-toolbar.activated button[ion-fab] {
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+fab-toolbar.activated button[ion-fab] ion-icon {
+  opacity: 0;
+}
+
+fab-toolbar.activated ion-row {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  opacity: 0;
+}
+
+fab-toolbar.activated ion-row ion-col button div {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+fab-toolbar.opened .backdrop {
+  opacity: 1;
+}
+
+fab-toolbar.opened button[ion-fab] {
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+fab-toolbar.opened button[ion-fab] ion-icon {
+  opacity: 0;
+}
+
+fab-toolbar.opened ion-row {
+  width: 100%;
+  position: absolute;
+  height: 68px;
+  z-index: 1;
+  line-height: 100%;
+  opacity: 1;
+}
+
+fab-toolbar.opened ion-row ion-col {
+  padding: 0px;
+}
+
+fab-toolbar.opened ion-row ion-col button {
+  height: 60px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+fab-toolbar.opened ion-row ion-col button div {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+fab-toolbar:not(.activated).opened ion-row {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  opacity: 0;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+fab-toolbar:not(.activated).opened ion-row ion-col button div {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+fab-toolbar:not(.activated).closed {
+  width: 68px;
+}
+
+fab-toolbar.closed ion-row {
+  width: 100%;
+  position: absolute;
+  height: 68px;
+  z-index: 1;
+  line-height: 100%;
+}
+
+fab-toolbar.closed ion-row ion-col {
+  padding: 0px;
+}
+
+fab-toolbar.closed ion-row ion-col button {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.button-clear-ios-primary {
+  border-color: transparent;
+  color: #fff;
+  background-color: transparent;
+}
+
+.button-clear-md-primary {
+  border-color: transparent;
+  color: #fff;
+  background-color: transparent;
+}
+
+.button-clear-md-primary:hover:not(.disable-hover) {
+  color: #ffffff;
+}
+
+fab-toolbar .backdrop {
+  display: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  position: absolute;
+}
+/*# sourceMappingURL=fab-toolbar.css.map */

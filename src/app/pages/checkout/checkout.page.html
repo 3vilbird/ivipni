@@ -1,0 +1,117 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-nav color="primary">
+      <ion-title>Edit Address</ion-title>
+    </ion-nav>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="checkout">
+  <form [formGroup]="checkForm">
+    <ion-list formGroupName="name">
+      <ion-item no-lines>
+        Delivery Address
+      </ion-item>
+      <ion-row>
+        <ion-item width-30>
+          <ion-label floating>First Name</ion-label>
+          <ion-input
+            type="text"
+            formControlName="first_name"
+            [(ngModel)]="firstname"
+            required
+          ></ion-input>
+        </ion-item>
+        <ion-item width-30>
+          <ion-label floating>Last Name</ion-label>
+          <ion-input
+            type="text"
+            formControlName="last_name"
+            [(ngModel)]="lastname"
+            required
+          ></ion-input>
+        </ion-item>
+      </ion-row>
+      <ion-item width-30>
+        <ion-label floating> Company Name</ion-label>
+        <ion-input
+          type="text"
+          formControlName="company"
+          [(ngModel)]="company"
+          required
+        ></ion-input>
+      </ion-item>
+      <ion-item width-30>
+        <ion-label floating> Address Line1</ion-label>
+        <ion-input
+          type="text"
+          formControlName="address1"
+          [(ngModel)]="address_1"
+          required
+        ></ion-input>
+      </ion-item>
+      <ion-item width-30>
+        <ion-label floating>Address Line2</ion-label>
+        <ion-input
+          type="text"
+          formControlName="address2"
+          [(ngModel)]="address_2"
+          required
+        ></ion-input>
+      </ion-item>
+      <ion-item width-30>
+        <ion-label floating>Town/City</ion-label>
+        <ion-input
+          type="text"
+          formControlName="city"
+          [(ngModel)]="city"
+          required
+        ></ion-input>
+      </ion-item>
+      <ion-item width-50>
+        <ion-label floating>State</ion-label>
+        <ion-select
+          formControlName="zone_id"
+          (ionChange)="myOptionFn();"
+          [(ngModel)]="name"
+        >
+          <ion-select-option
+            *ngFor="let item of optionsList"
+            value="{{item.name}}"
+            >{{item.name}}</ion-select-option
+          >
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Pin Code</ion-label>
+        <ion-input
+          type="number"
+          formControlName="postcode"
+          [(ngModel)]="postcode"
+          required
+        ></ion-input>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col>
+        <ion-button color="danger" (click)="back();">
+          CANCLE
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button
+          color="primary"
+          (click)="checkOutAddress()"
+          [disabled]="!checkForm.valid"
+        >
+          UPDATE
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

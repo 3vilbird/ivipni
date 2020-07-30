@@ -1,0 +1,58 @@
+.head {
+    background-color: whitesmoke;
+  }
+  .head p {
+    margin-top: 13px;
+    margin-left: 15px;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .com {
+    background-color: whitesmoke;
+  }
+  //Error messages
+  .up {
+    float: right;
+    color: red;
+  }
+  
+  .com p {
+    margin-top: 13px;
+    margin-left: 15px;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .add {
+    background-color: whitesmoke;
+  }
+  .add p {
+    margin-top: 13px;
+    margin-left: 15px;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  ion-label {
+    font-size: 15px;
+  }
+  
+  .toast-md .toast-wrapper {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    margin: auto;
+    width: 85%;
+    max-width: 700px;
+    border-radius: 35px;
+    background: gray;
+    /* color: black; */
+  }
+  
+  .toast-md .toast-message {
+    padding: 19px 16px 17px;
+    font-size: 1.5rem;
+    /* color: #fff; */
+    text-align: center;
+  }
+  

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,aADS,CACT,GAAG,CAAC,GAAG,CAAC;EACN,UAAU,EAAE,KAAK;EACjB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,OAAO,EAAE,KAAK;CACf",
+    "sources": [
+        "rootpage.page.scss"
+    ],
+    "names": [],
+    "file": "rootpage.page.css"
+}

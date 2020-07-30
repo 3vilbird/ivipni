@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACH,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;CAClB;;AACD,AAAA,OAAO,CAAC;EACN,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,IAAI;CAChB",
+    "sources": [
+        "reg-thankyou.page.scss"
+    ],
+    "names": [],
+    "file": "reg-thankyou.page.css"
+}
