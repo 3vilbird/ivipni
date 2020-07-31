@@ -5,134 +5,132 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-nav color="primary">
-      <ion-title>Payment Details</ion-title>
-  </ion-nav>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Payment Details</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content class="order-details">
+  <div class="order">
+    <ion-card class="order1">
+      <ion-row>
+        <ion-col class="col1"><b>Order Id:</b> </ion-col>
 
-    <div class="order">
-        <ion-card class="order1">
-            <ion-row>
-                <ion-col class="col1"><b>Order Id:</b>
-                </ion-col>
+        <ion-col class="col2">
+          <b> {{order_id}} </b>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="col1">
+          <p>Status:</p>
+        </ion-col>
+        <ion-col class="col2">
+          <p>{{status}}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="col1">
+          <p>Amount:</p>
+        </ion-col>
+        <ion-col class="col2">
+          <p>{{twentyfiveamount | currency:'INR':true}}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="col1">
+          <p>Order Date:</p>
+        </ion-col>
+        <ion-col class="col2">
+          <p>{{date_added}}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="payment_method == 'COD'">
+        <ion-col class="col1">
+          <p>Payment Type:</p>
+        </ion-col>
+        <ion-col class="col2">
+          <p>{{payment_method}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
+  <div class="paymentdetails">
+    <ion-card class="order1" *ngIf="twentyfiveamount != 0">
+      <ion-label>
+        <h2><b> Payment Detail:</b></h2>
+      </ion-label>
+      <ion-row>
+        <ion-col class="col1"><b>TransactionID:</b> </ion-col>
 
-                <ion-col class="col2">
-                    <b> {{order_id}} </b>
-                </ion-col>
-            </ion-row>
-            <ion-row>
-                <ion-col class="col1">
-                    <p>Status:</p>
-                </ion-col>
-                <ion-col class="col2">
-                    <p> {{status}} </p>
-                </ion-col>
-            </ion-row>
-            <ion-row>
-                <ion-col class="col1">
-                    <p>Amount:</p>
-                </ion-col>
-                <ion-col class="col2">
-                    <p> {{twentyfiveamount | currency:'INR':true}} </p>
-                </ion-col>
-            </ion-row>
-            <ion-row>
-                <ion-col class="col1">
-                    <p>Order Date:</p>
-                </ion-col>
-                <ion-col class="col2">
-                    <p> {{date_added}} </p>
-                </ion-col>
-            </ion-row>
-            <ion-row *ngIf="payment_method == 'COD'">
-                <ion-col class="col1">
-                    <p>Payment Type:</p>
-                </ion-col>
-                <ion-col class="col2">
-                    <p> {{payment_method}} </p>
-                </ion-col>
-            </ion-row>
-        </ion-card>
-    </div>
-    <div class="paymentdetails">
-        <ion-card class="order1" *ngIf="twentyfiveamount != 0">
-            <ion-label>
-                <h2><b> Payment Detail:</b></h2>
-            </ion-label>
-            <ion-row>
-                <ion-col class="col1"><b>TransactionID:</b>
-                </ion-col>
+        <ion-col class="col2">
+          <b> {{twentyfivetransaction_id}} </b>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="payment_method != 'COD'">
+        <ion-col class="col1">
+          <p>Payment Date:</p>
+        </ion-col>
+        <ion-col class="col2">
+          <p>{{date_twentyfive}}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="col1">
+          <p>Amount:</p>
+        </ion-col>
+        <ion-col class="col2">
+          <p>{{twentyfiveamount | currency:'INR':true}}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="col1">
+          <p>Payment Method:</p>
+        </ion-col>
+        <ion-col class="col2">
+          <p>{{payment_method}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
+  <div>
+    <ion-card class="order1" *ngIf="seventyfiveamount != 0">
+      <ion-label>
+        <h2><b>75% Payment Detail:</b></h2>
+      </ion-label>
+      <ion-row>
+        <ion-col class="col1"><b>Transaction ID:</b> </ion-col>
 
-                <ion-col class="col2">
-                    <b> {{twentyfivetransaction_id}} </b>
-                </ion-col>
-            </ion-row>
-            <ion-row *ngIf="payment_method != 'COD'">
-                <ion-col class="col1">
-                    <p>Payment Date:</p>
-                </ion-col>
-                <ion-col class="col2">
-                    <p> {{date_twentyfive}} </p>
-                </ion-col>
-            </ion-row>
-            <ion-row>
-                <ion-col class="col1">
-                    <p>Amount:</p>
-                </ion-col>
-                <ion-col class="col2">
-                    <p> {{twentyfiveamount | currency:'INR':true}} </p>
-                </ion-col>
-            </ion-row>
-            <ion-row>
-                <ion-col class="col1">
-                    <p>Payment Method:</p>
-                </ion-col>
-                <ion-col class="col2">
-                    <p> {{payment_method}} </p>
-                </ion-col>
-            </ion-row>
-        </ion-card>
-    </div>
-    <div>
-        <ion-card class="order1" *ngIf="seventyfiveamount != 0">
-            <ion-label>
-                <h2><b>75% Payment Detail:</b></h2>
-            </ion-label>
-            <ion-row>
-                <ion-col class="col1"><b>Transaction ID:</b>
-                </ion-col>
-
-                <ion-col class="col2">
-                    <b> {{seventyfivetransaction_id}} </b>
-                </ion-col>
-            </ion-row>
-            <ion-row>
-                <ion-col class="col1">
-                    <p>Payment Date:</p>
-                </ion-col>
-                <ion-col class="col2">
-                    <p> {{date}} </p>
-                </ion-col>
-            </ion-row>
-            <ion-row>
-                <ion-col class="col1">
-                    <p>Amount:</p>
-                </ion-col>
-                <ion-col class="col2">
-                    <p> {{seventyfiveamount | currency:'INR':true}} </p>
-                </ion-col>
-            </ion-row>
-            <ion-row>
-                <ion-col class="col1">
-                    <p>Payment Method:</p>
-                </ion-col>
-                <ion-col class="col2">
-                    <p> {{seventyfivepayment_method}} </p>
-                </ion-col>
-            </ion-row>
-        </ion-card>
-    </div>
-
+        <ion-col class="col2">
+          <b> {{seventyfivetransaction_id}} </b>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="col1">
+          <p>Payment Date:</p>
+        </ion-col>
+        <ion-col class="col2">
+          <p>{{date}}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="col1">
+          <p>Amount:</p>
+        </ion-col>
+        <ion-col class="col2">
+          <p>{{seventyfiveamount | currency:'INR':true}}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="col1">
+          <p>Payment Method:</p>
+        </ion-col>
+        <ion-col class="col2">
+          <p>{{seventyfivepayment_method}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
 </ion-content>

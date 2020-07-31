@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\r\n  <ion-toolbar>\r\n    <ion-nav padding color=\"primary\">\r\n      <ion-title>Registration Sucessful</ion-title>\r\n  </ion-nav>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <div class=\"align\">\r\n    <p><b>Thank you for registering!</b> </p>\r\n</div>\r\n<div class=\"align2\">\r\n    <p>We will get back to you soon</p>\r\n    <button color=\"primary\" ion-button medium (click)=\"register1()\">login</button>\r\n</div>\r\n\r\n</ion-content>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n    <ion-nav padding color=\"primary\">\n      <ion-title>Registration Sucessful</ion-title>\n  </ion-nav>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <div class=\"align\">\n    <p><b>Thank you for registering!</b> </p>\n</div>\n<div class=\"align2\">\n    <p>We will get back to you soon</p>\n    <button color=\"primary\" ion-button medium (click)=\"register1()\">login</button>\n</div>\n\n</ion-content>\n");
 
 /***/ }),
 
@@ -101,7 +101,7 @@ RegThankyouPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".align {\n  text-align: center;\n  font-size: 20px;\n  padding-top: 40px;\n}\n\n.align2 {\n  text-align: center;\n  font-size: 16px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvcmVnLXRoYW5reW91L0Q6XFxTZWVtYVxcUHJvamVjdFxcaXZpcG5pL3NyY1xcYXBwXFxwYWdlc1xccmVnLXRoYW5reW91XFxyZWctdGhhbmt5b3UucGFnZS5zY3NzIiwic3JjL2FwcC9wYWdlcy9yZWctdGhhbmt5b3UvcmVnLXRoYW5reW91LnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGtCQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0FDQ0o7O0FEQ0U7RUFDRSxrQkFBQTtFQUNBLGVBQUE7QUNFSiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3JlZy10aGFua3lvdS9yZWctdGhhbmt5b3UucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFsaWduIHtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgIHBhZGRpbmctdG9wOiA0MHB4O1xyXG4gIH1cclxuICAuYWxpZ24yIHtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGZvbnQtc2l6ZTogMTZweDtcclxuICB9XHJcbiAgIiwiLmFsaWduIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXNpemU6IDIwcHg7XG4gIHBhZGRpbmctdG9wOiA0MHB4O1xufVxuXG4uYWxpZ24yIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXNpemU6IDE2cHg7XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".align {\n  text-align: center;\n  font-size: 20px;\n  padding-top: 40px;\n}\n\n.align2 {\n  text-align: center;\n  font-size: 16px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RldmlsL0Rlc2t0b3AvaXZpcG5pL3NyYy9hcHAvcGFnZXMvcmVnLXRoYW5reW91L3JlZy10aGFua3lvdS5wYWdlLnNjc3MiLCJzcmMvYXBwL3BhZ2VzL3JlZy10aGFua3lvdS9yZWctdGhhbmt5b3UucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7QUNDSjs7QURDRTtFQUNFLGtCQUFBO0VBQ0EsZUFBQTtBQ0VKIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvcmVnLXRoYW5reW91L3JlZy10aGFua3lvdS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYWxpZ24ge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LXNpemU6IDIwcHg7XG4gICAgcGFkZGluZy10b3A6IDQwcHg7XG4gIH1cbiAgLmFsaWduMiB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgfVxuICAiLCIuYWxpZ24ge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGZvbnQtc2l6ZTogMjBweDtcbiAgcGFkZGluZy10b3A6IDQwcHg7XG59XG5cbi5hbGlnbjIge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn0iXX0= */");
 
 /***/ }),
 

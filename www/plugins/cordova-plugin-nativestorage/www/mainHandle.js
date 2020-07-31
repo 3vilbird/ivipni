@@ -1,5 +1,4 @@
-cordova.define("cordova-plugin-nativestorage.mainHandle", function(require, exports, module) {
-var inBrowser = false;
+cordova.define("cordova-plugin-nativestorage.mainHandle", function(require, exports, module) { var inBrowser = false;
 var NativeStorageError = require('./NativeStorageError');
 
 

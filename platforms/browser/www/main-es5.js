@@ -166,7 +166,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-app>\r\n  <ion-router-outlet></ion-router-outlet>\r\n</ion-app>\r\n";
+    __webpack_exports__["default"] = "<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n";
     /***/
   },
 
@@ -1232,7 +1232,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "ion-spinner * {\n  width: 28px;\n  height: 28px;\n  stroke: #444;\n  fill: #222;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvRDpcXFNlZW1hXFxQcm9qZWN0XFxpdmlwbmkvc3JjXFxhcHBcXGFwcC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0ksV0FBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtBQ0FKIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbmlvbi1zcGlubmVyICoge1xyXG4gICAgd2lkdGg6IDI4cHg7XHJcbiAgICBoZWlnaHQ6IDI4cHg7XHJcbiAgICBzdHJva2U6ICM0NDQ7XHJcbiAgICBmaWxsOiAjMjIyO1xyXG4gIH1cclxuICAiLCJpb24tc3Bpbm5lciAqIHtcbiAgd2lkdGg6IDI4cHg7XG4gIGhlaWdodDogMjhweDtcbiAgc3Ryb2tlOiAjNDQ0O1xuICBmaWxsOiAjMjIyO1xufSJdfQ== */";
+    __webpack_exports__["default"] = "ion-spinner * {\n  width: 28px;\n  height: 28px;\n  stroke: #444;\n  fill: #222;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RldmlsL0Rlc2t0b3AvaXZpcG5pL3NyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDSSxXQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxVQUFBO0FDQUoiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbmlvbi1zcGlubmVyICoge1xuICAgIHdpZHRoOiAyOHB4O1xuICAgIGhlaWdodDogMjhweDtcbiAgICBzdHJva2U6ICM0NDQ7XG4gICAgZmlsbDogIzIyMjtcbiAgfVxuICAiLCJpb24tc3Bpbm5lciAqIHtcbiAgd2lkdGg6IDI4cHg7XG4gIGhlaWdodDogMjhweDtcbiAgc3Ryb2tlOiAjNDQ0O1xuICBmaWxsOiAjMjIyO1xufSJdfQ== */";
     /***/
   },
 
@@ -1486,7 +1486,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var _ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
     /*! @ionic-native/in-app-browser/ngx */
-    "./node_modules/@ionic-native/in-app-browser/ngx/index.js"); // import { AppVersion } from "@ionic-native/app-version/ngx";
+    "./node_modules/@ionic-native/in-app-browser/ngx/index.js");
+    /* harmony import */
+
+
+    var _ionic_native_sms_retriever_ngx__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
+    /*! @ionic-native/sms-retriever/ngx */
+    "./node_modules/@ionic-native/sms-retriever/ngx/index.js");
+    /* harmony import */
+
+
+    var _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
+    /*! @ionic-native/photo-viewer/ngx */
+    "./node_modules/@ionic-native/photo-viewer/ngx/index.js"); // import { AppVersion } from "@ionic-native/app-version/ngx";
 
 
     var AppModule = function AppModule() {
@@ -1498,7 +1510,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       entryComponents: [],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientModule"], _ionic_storage__WEBPACK_IMPORTED_MODULE_18__["IonicStorageModule"].forRoot()],
       providers: [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientModule"], _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"], _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["SplashScreen"], src_providers_commerce_products__WEBPACK_IMPORTED_MODULE_9__["Products"], src_providers_commerce_users__WEBPACK_IMPORTED_MODULE_10__["Users"], src_providers_configurator_configurator__WEBPACK_IMPORTED_MODULE_11__["Configurator"], src_providers_holders_holders__WEBPACK_IMPORTED_MODULE_12__["Holders"], src_providers_logger_logger__WEBPACK_IMPORTED_MODULE_13__["Logger"], src_providers_network_rest__WEBPACK_IMPORTED_MODULE_14__["Rest"], src_providers_network_service_network_service__WEBPACK_IMPORTED_MODULE_15__["NetworkService"], _ionic_native_network_ngx__WEBPACK_IMPORTED_MODULE_17__["Network"], _ionic_native_device_ngx__WEBPACK_IMPORTED_MODULE_19__["Device"], _ionic_native_onesignal_ngx__WEBPACK_IMPORTED_MODULE_20__["OneSignal"], // AppVersion,
-      _ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_21__["InAppBrowser"], {
+      _ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_21__["InAppBrowser"], _ionic_native_sms_retriever_ngx__WEBPACK_IMPORTED_MODULE_22__["SmsRetriever"], _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_23__["PhotoViewer"], {
         provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"],
         useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"]
       }],
@@ -2113,13 +2125,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       }, {
         key: "generateOTP",
-        value: function generateOTP(loginId, callbackFn) {
+        value: function generateOTP(loginId, hash, callbackFn) {
           var _this = this;
 
           _this.logger.debug("Generating  OTP for : " + JSON.stringify(loginId));
 
           this.restService.post("/generateOTP", {
-            loginId: loginId
+            loginId: loginId,
+            hash: hash
           }, function (data) {
             _this.logger.debug("generate OTP : " + JSON.stringify(data));
 
@@ -2791,9 +2804,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _classCallCheck(this, Configurator);
 
       this.logLevel = 1; // 1 - Errors, 2- Errors/Info , 3 - Error/Info/Debug
+      // public restServerBaseUrl = "http://34.87.43.10/ivipni/index.php?";
 
-      this.restServerBaseUrl = "http://34.87.43.10/ivipni/index.php?"; //public restServerBaseUrl = "http://localhost:8080/ivipni/index.php?";
-
+      this.restServerBaseUrl = "http://localhost:8080/ivipni/index.php?";
       this.restServerControllerUrl = "route=restapi/restapi";
     };
 
@@ -3739,7 +3752,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! D:\Seema\Project\ivipni\src\main.ts */
+    /*! /home/devil/Desktop/ivipni/src/main.ts */
     "./src/main.ts");
     /***/
   }

@@ -8,11 +8,13 @@
 </ion-header>
 
 <ion-content class="shopping">
-  <div class="product_details" *ngFor="let item of shopingCart; let idx = index">
+  <div
+    class="product_details"
+    *ngFor="let item of shopingCart; let idx = index"
+  >
     <ion-row>
       <div *ngIf="item.image_flag != 0" class="divimageflag">
-        <img class="imagecategory"
-          src="https://www.kugellager-express.de/media/image/product/6939/lg/deep-groove-ball-bearing-6412-open-60x150x35-mm.jpg" />
+        <img class="imagecategory" src="{{item.image}}" />
         <!-- src="{{item.image}}" /> -->
       </div>
       <ion-col>
@@ -55,10 +57,15 @@
           (counterChange)="myValueChange($event,item,item?.option[0],myValue[idx].quantity);"
         ></counter>
         -->
+        {{myValue[idx].quantity}}
       </ion-col>
 
       <ion-col class="delete_icon">
-        <ion-icon name="trash" (click)="deletItem(item);"></ion-icon>
+        <ion-icon
+          color="danger"
+          name="trash"
+          (click)="deletItem(item);"
+        ></ion-icon>
       </ion-col>
     </ion-row>
 
@@ -116,7 +123,13 @@
     <ion-label class="ion-text-wrap">
       Your cart is empty!
     </ion-label>
-    <ion-button small class="ion-margin" expand="full" shape="round" (click)="backToHome()">
+    <ion-button
+      small
+      class="ion-margin"
+      expand="full"
+      shape="round"
+      (click)="backToHome()"
+    >
       Start shopping
     </ion-button>
   </div>
@@ -124,6 +137,13 @@
 
 <ion-footer *ngIf="shopingCart.length > 0">
   <ion-toolbar>
-    <ion-button small class="ion-margin" (click)="checkoutNav()" shape="round" expand="full">Checkout</ion-button>
+    <ion-button
+      small
+      class="ion-margin"
+      (click)="checkoutNav()"
+      shape="round"
+      expand="full"
+      >Checkout</ion-button
+    >
   </ion-toolbar>
 </ion-footer>

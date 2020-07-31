@@ -19,7 +19,12 @@
           <h6>{{category.model}}</h6>
         </ion-col>
         <ion-col col-2>
-          <ion-icon name="trash" class="trash" (click)="deleteWishlist(category);"></ion-icon>
+          <ion-icon
+            color="danger"
+            name="trash"
+            class="trash"
+            (click)="deleteWishlist(category);"
+          ></ion-icon>
         </ion-col>
       </ion-row>
 
@@ -32,13 +37,21 @@
             <ion-item>
               <ion-label floating></ion-label>
 
-              <ion-select [interfaceOptions]="selectOptions" (ngModel)="place"
-                (ionChange)="optionsFn($event, category.product_id);">
-                <ion-select-option [value]="item" *ngFor=" let item of category?.option1; let subidx = index ">
+              <ion-select
+                [interfaceOptions]="selectOptions"
+                (ngModel)="place"
+                (ionChange)="optionsFn($event, category.product_id);"
+              >
+                <ion-select-option
+                  [value]="item"
+                  *ngFor=" let item of category?.option1; let subidx = index "
+                >
                   <span>{{item.name}}</span>&nbsp;&nbsp; - &nbsp;&nbsp;
                   <span>{{item.price | currency:'INR':true}}</span>
-                </ion-select-option>
-              </ion-select><small class="smallcount">&nbsp;&nbsp;{{category.sellercount-1}} more seller</small>
+                </ion-select-option> </ion-select
+              ><small class="smallcount"
+                >&nbsp;&nbsp;{{category.sellercount-1}} more seller</small
+              >
             </ion-item>
           </div>
 
@@ -52,13 +65,22 @@
           <ion-label>Size:</ion-label>
         </ion-col>
         <ion-col class="options_select">
-          <div class="options_height" *ngIf="prods[idx].option2value.length > 1">
+          <div
+            class="options_height"
+            *ngIf="prods[idx].option2value.length > 1"
+          >
             <ion-item>
               <ion-label floating></ion-label>
 
-              <ion-select [interfaceOptions]="selectOptions" (ngModel)="place1"
-                (ionChange)="option1Fn($event, category.product_id);">
-                <ion-select-option [value]="temp" *ngFor=" let temp of prods[idx]?.option2value;let subidx = index ">
+              <ion-select
+                [interfaceOptions]="selectOptions"
+                (ngModel)="place1"
+                (ionChange)="option1Fn($event, category.product_id);"
+              >
+                <ion-select-option
+                  [value]="temp"
+                  *ngFor=" let temp of prods[idx]?.option2value;let subidx = index "
+                >
                   <span>
                     <p>{{temp.name}}</p>
                   </span>
@@ -66,22 +88,36 @@
               </ion-select>
             </ion-item>
           </div>
-          <div class="options_height" *ngIf="prods[idx].option2value.length == 1">
-            <div class="options_height" *ngIf="category?.option1[0].option2.length > 1">
+          <div
+            class="options_height"
+            *ngIf="prods[idx].option2value.length == 1"
+          >
+            <div
+              class="options_height"
+              *ngIf="category?.option1[0].option2.length > 1"
+            >
               <ion-item>
                 <ion-label floating></ion-label>
 
-                <ion-select [interfaceOptions]="selectOptions" (ngModel)="place"
-                  (ionChange)="option1Fn($event, category.product_id);">
-                  <ion-select-option [value]="temp"
-                    *ngFor=" let temp of category?.option1[0].option2; let subidx = index ">
+                <ion-select
+                  [interfaceOptions]="selectOptions"
+                  (ngModel)="place"
+                  (ionChange)="option1Fn($event, category.product_id);"
+                >
+                  <ion-select-option
+                    [value]="temp"
+                    *ngFor=" let temp of category?.option1[0].option2; let subidx = index "
+                  >
                     <p>{{temp.name}}</p>
                   </ion-select-option>
                 </ion-select>
               </ion-item>
             </div>
 
-            <div class="options_height" *ngIf="prods[idx].option2value.length ==1">
+            <div
+              class="options_height"
+              *ngIf="prods[idx].option2value.length ==1"
+            >
               {{prods[idx].option2value[0].name}}
             </div>
           </div>
@@ -101,13 +137,21 @@
 
           <ion-col>
             <div *ngIf="prods[idx].quantity > 0" class="quantity1">
-              <ion-input type="number" value="" [(ngModel)]="prods[idx].requestedQty"></ion-input>
+              <ion-input
+                type="number"
+                value=""
+                [(ngModel)]="prods[idx].requestedQty"
+              ></ion-input>
             </div>
           </ion-col>
           <ion-col>
             <div *ngIf="category.product_status == 1">
               <div class="icon_cart" *ngIf="prods[idx].quantity > 0">
-                <ion-icon name="cart" class="cart" (click)="addToCart(category, prods[idx])"></ion-icon>
+                <ion-icon
+                  name="cart"
+                  class="cart"
+                  (click)="addToCart(category, prods[idx])"
+                ></ion-icon>
               </div>
               <div *ngIf="prods[idx].quantity <= 0" class="icon_cart_color">
                 <div class="outofStack">out of stock</div>

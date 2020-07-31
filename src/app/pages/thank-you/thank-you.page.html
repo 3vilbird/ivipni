@@ -1,115 +1,132 @@
 <ion-header>
-    <ion-toolbar color="primary">
-        <ion-title>Order Received</ion-title>
-    </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-title>Order Received</ion-title>
+  </ion-toolbar>
 </ion-header>
 <ion-content class="thank-you">
-    <div *ngIf="orderSuccess" class="ion-margin">
-        <ion-item lines="none">
-            <ion-icon name="checkmark-circle" color="success"></ion-icon>
-            <ion-text>Order Successful! </ion-text>
-        </ion-item>
-        <ion-text>Thank you.Your order has been placed. </ion-text>
-    </div>
-    <div *ngIf="orderFailure" class="ion-margin">
-        <ion-item lines="none">
-            <ion-icon name="close-circle" color="danger"></ion-icon>
-            <ion-text>Order Failed!</ion-text>
-        </ion-item>
-        <ion-text>Oops! Failed to place your order. </ion-text>
-    </div>
-    <ion-list>
-        <ion-item *ngIf="orderSuccess">
-            <ion-label>
-                <h3>Order number</h3>
-            </ion-label>
-            <ion-note slot="end">{{order_id}}</ion-note>
-        </ion-item>
-        <ion-item>
-            <ion-label>
-                <h3>Date</h3>
-            </ion-label>
-            <ion-note slot="end">{{date | date:'dd-MM-yyyy'}}</ion-note>
-        </ion-item>
-        <ion-item>
-            <ion-label>
-                <h3>Amount</h3>
-            </ion-label>
-            <ion-note slot="end">{{totalamount | currency:'INR':true}}</ion-note>
-        </ion-item>
-        <ion-item>
-            <ion-label>
-                <h3>Payment method</h3>
-            </ion-label>
-            <ion-note slot="end">{{paymentMethod}}</ion-note>
-        </ion-item>
-    </ion-list>
+  <div *ngIf="orderSuccess" class="ion-margin">
+    <ion-item lines="none">
+      <ion-icon name="checkmark-circle" color="success"></ion-icon>
+      <ion-text>Order Successful! </ion-text>
+    </ion-item>
+    <ion-text>Thank you.Your order has been placed. </ion-text>
+  </div>
+  <div *ngIf="orderFailure" class="ion-margin">
+    <ion-item lines="none">
+      <ion-icon name="close-circle" color="danger"></ion-icon>
+      <ion-text>Order Failed!</ion-text>
+    </ion-item>
+    <ion-text>Oops! Failed to place your order. </ion-text>
+  </div>
+  <ion-list>
+    <ion-item *ngIf="orderSuccess">
+      <ion-label>
+        <h3>Order number</h3>
+      </ion-label>
+      <ion-text slot="end">{{order_id}}</ion-text>
+    </ion-item>
     <ion-item>
-        <ion-label>Order Details</ion-label>
+      <ion-label>
+        <h3>Date</h3>
+      </ion-label>
+      <ion-text slot="end">{{date | date:'dd-MM-yyyy'}}</ion-text>
+      <!-- <ion-note slot="end">{{date | date:'dd-MM-yyyy'}}</ion-note> -->
     </ion-item>
-    <ion-item *ngFor="let item of dataArray">
-        <ion-label>
-            <h2>{{item.name}}-{{item.model}}</h2>
-            <h3 *ngIf="item.option.length > 1">( Size:{{item.option[0].value}})</h3>
-            <h3 *ngIf="item.option.length == 1">{{item.option[0].value}}</h3>
-            <h3 *ngIf="item.option.length >1">{{item.option[1].value}}</h3>
-        </ion-label>
-        <div>
-            <ion-label>
-                <h2>Quantity: {{item.quantity}}</h2>
-            </ion-label>
-            <ion-label>
-                <h2>{{item.total |  currency:'INR':true}}</h2>
-            </ion-label>
-        </div>
+    <ion-item>
+      <ion-label>
+        <h3>Amount</h3>
+      </ion-label>
+      <!-- <ion-note slot="end">{{totalamount | currency:'INR':true}}</ion-note> -->
+      <ion-text slot="end">{{totalamount | currency:'INR':true}}</ion-text>
+
     </ion-item>
-    <ion-card>
-        <div *ngFor="let cost of allTotal">
-            <ion-row class="addressrow">
-                <ion-col>
-                    {{cost.title}}
-                </ion-col>
-                <ion-col>
-                    {{cost.value | currency:'INR':true}}
-                </ion-col>
-            </ion-row>
-            <ion-row>
-                <ion-col>
-                    <b>Total Amount:</b>
-                    <p><small>(Incl 2% extra)</small></p>
-                </ion-col>
-                <ion-col>
-                    <b>{{totalamount |  currency:'INR':true}}</b>
-                </ion-col>
-            </ion-row>
-        </div>
-    </ion-card>
-    <ion-item *ngIf="orderSuccess">
-        <ion-label>Delivery Details</ion-label>
+    <ion-item>
+      <ion-label>
+        <h3>Payment method</h3>
+      </ion-label>
+      <!-- <ion-note slot="end">{{paymentMethod}}</ion-note> -->
+      <ion-text slot="end">{{paymentMethod}}</ion-text>      
     </ion-item>
-    <ion-item *ngIf="orderSuccess">
-        <ion-label class="ion-padding">
-            <h3>{{firstname}} {{lastname}}</h3>
-            <h3>{{company}}</h3>
-            <h3>{{address_1}}</h3>
-            <h3>{{address_2}}</h3>
-            <h3>{{city}}, {{name}}, {{postcode}}</h3>
-            <ion-item lines="none">
-                <ion-icon name="mail-open" class="ion-padding-end"></ion-icon>
-                <ion-label>{{email}}</ion-label>
-              </ion-item>
-              <ion-item lines="none">
-                <ion-icon name="call" class="ion-padding-end"></ion-icon>
-                <ion-label>{{telephone}}</ion-label>
-              </ion-item>
-        </ion-label>
-    </ion-item>
+  </ion-list>
+  <ion-item>
+    <ion-label>Order Details</ion-label>
+  </ion-item>
+  <ion-item *ngFor="let item of dataArray">
+    <ion-label>
+      <h2>{{item.name}}-{{item.model}}</h2>
+      <h3 *ngIf="item.option.length > 1">( Size:{{item.option[0].value}})</h3>
+      <h3 *ngIf="item.option.length == 1">{{item.option[0].value}}</h3>
+      <h3 *ngIf="item.option.length >1">{{item.option[1].value}}</h3>
+    </ion-label>
+    <div>
+      <ion-label>
+        <h2>Quantity: {{item.quantity}}</h2>
+      </ion-label>
+      <ion-label>
+        <h2>{{item.total | currency:'INR':true}}</h2>
+      </ion-label>
+    </div>
+  </ion-item>
+  <ion-card>
+    <div *ngFor="let cost of allTotal">
+      <ion-row class="addressrow">
+        <ion-col>
+          {{cost.title}}
+        </ion-col>
+        <ion-col>
+          {{cost.value | currency:'INR':true}}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <b>Total Amount:</b>
+          <p><small>(Incl 2% extra)</small></p>
+        </ion-col>
+        <ion-col>
+          <b>{{totalamount | currency:'INR':true}}</b>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-card>
+  <ion-item *ngIf="orderSuccess">
+    <ion-label>Delivery Details</ion-label>
+  </ion-item>
+  <ion-item *ngIf="orderSuccess">
+    <ion-label class="ion-padding">
+      <h3>{{firstname}} {{lastname}}</h3>
+      <h3>{{company}}</h3>
+      <h3>{{address_1}}</h3>
+      <h3>{{address_2}}</h3>
+      <h3>{{city}}, {{name}}, {{postcode}}</h3>
+      <ion-item lines="none">
+        <ion-icon name="mail-open" class="ion-padding-end"></ion-icon>
+        <ion-label>{{email}}</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon name="call" class="ion-padding-end"></ion-icon>
+        <ion-label>{{telephone}}</ion-label>
+      </ion-item>
+    </ion-label>
+  </ion-item>
 </ion-content>
 <ion-footer>
-    <ion-toolbar>
-        <ion-button *ngIf="orderSuccess" (click)="submit()" shape="round" expand="full" color="primary">Home
-        </ion-button>
-        <ion-button *ngIf="orderFailure" (click)="notSubmit()" shape="round" expand="full" color="primary"
-            fill="outline">MoveToCart</ion-button>
-    </ion-toolbar>
+  <ion-toolbar>
+    <ion-button
+      *ngIf="orderSuccess"
+      (click)="submit()"
+      shape="round"
+      expand="full"
+      color="primary"
+      >Home
+    </ion-button>
+    <ion-button
+      *ngIf="orderFailure"
+      (click)="notSubmit()"
+      shape="round"
+      expand="full"
+      color="primary"
+      fill="outline"
+      >MoveToCart</ion-button
+    >
+  </ion-toolbar>
 </ion-footer>

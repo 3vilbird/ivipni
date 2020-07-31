@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\r\n  <ion-toolbar color=\"primary\">\r\n    <ion-buttons slot=\"start\">\r\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\r\n    </ion-buttons>\r\n    <ion-title>\r\n      Reset Password\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content padding>\r\n  <div *ngIf=\"email\">\r\n    <ion-item *ngIf=\"emailButton1\">\r\n      <ion-label floating>Email/Mobile</ion-label>\r\n      <ion-input type=\"text\" [(ngModel)]=\"loginId\"></ion-input>\r\n    </ion-item>\r\n    <ion-button (click)=\"generateOTP()\" expand='full' fill=\"outline\" shape=\"round\" *ngIf=\"emailButton1\">\r\n      Send OTP\r\n    </ion-button>\r\n  </div>\r\n  <div *ngIf=\"emailButton2\">\r\n    <h6 *ngIf=\"emailButton2\" class=\"tageinforgot\">\r\n      We are Unable to read SMS, Please enter OTP here\r\n    </h6>\r\n    <ion-item *ngIf=\"emailButton2\">\r\n      <ion-label floating>Enter OTP</ion-label>\r\n      <ion-input type=\"text\" [(ngModel)]=\"otp\"></ion-input>\r\n    </ion-item>\r\n    <ion-row *ngIf=\"emailButton2\">\r\n      <ion-col>\r\n        <ion-button (click)=\"generateOTP()\">Resend OTP</ion-button>\r\n      </ion-col>\r\n      <ion-col>\r\n        <ion-button (click)=\"validateOTP()\" *ngIf=\"emailButton2\">\r\n          Validate OTP\r\n        </ion-button>\r\n      </ion-col>\r\n    </ion-row>\r\n  </div>\r\n  <div *ngIf=\"secondDiv\">\r\n    <ion-item>\r\n      <ion-label floating> New Password</ion-label>\r\n      <ion-input type=\"password\" [(ngModel)]=\"newpassword\"></ion-input>\r\n    </ion-item>\r\n    <ion-item>\r\n      <ion-label floating> Confirm Password</ion-label>\r\n      <ion-input type=\"password\" [(ngModel)]=\"conformPassword\"></ion-input>\r\n    </ion-item>\r\n    <ion-button (click)=\"changePassword()\">Change Password</ion-button>\r\n  </div>\r\n</ion-content>");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\n    </ion-buttons>\n    <ion-title>\n      Reset Password\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n  <div *ngIf=\"email\">\n    <ion-item *ngIf=\"emailButton1\">\n      <ion-label position=\"stacked\">Email/Mobile</ion-label>\n      <ion-input type=\"text\" [(ngModel)]=\"loginId\"></ion-input>\n    </ion-item>\n    <ion-button (click)=\"genHash()\" *ngIf=\"emailButton1\" expand=\"block\">\n      Send OTP\n    </ion-button>\n  </div>\n  <div *ngIf=\"emailButton2\">\n    <h6 *ngIf=\"emailButton2\" class=\"tageinforgot\">\n      We are Unable to read SMS, Please enter OTP here\n    </h6>\n    <ion-item *ngIf=\"emailButton2\">\n      <ion-label position=\"stacked\">Enter OTP</ion-label>\n      <ion-input type=\"text\" [(ngModel)]=\"otp\"></ion-input>\n    </ion-item>\n    <ion-row *ngIf=\"emailButton2\">\n      <ion-col>\n        <ion-button (click)=\"generateOTP();\" expand=\"block\"\n          >Resend OTP</ion-button\n        >\n      </ion-col>\n      <ion-col>\n        <ion-button\n          (click)=\"validateOTP();\"\n          *ngIf=\"emailButton2\"\n          expand=\"block\"\n        >\n          Validate OTP\n        </ion-button>\n      </ion-col>\n    </ion-row>\n  </div>\n  <div *ngIf=\"secondDiv\">\n    <ion-item>\n      <ion-label position=\"stacked\"> New Password</ion-label>\n      <ion-input type=\"password\" [(ngModel)]=\"newpassword\"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label position=\"stacked\"> Confirm Password</ion-label>\n      <ion-input type=\"password\" [(ngModel)]=\"conformPassword\"></ion-input>\n    </ion-item>\n    <ion-button (click)=\"changePassword();\" expand=\"block\"\n      >CHANGE PASSWORD</ion-button\n    >\n  </div>\n</ion-content>\n");
 
 /***/ }),
 
@@ -101,7 +101,7 @@ ForgotPasswordPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("page-forgotpassword ion-header {\n  background-color: blue;\n}\npage-forgotpassword .button-round-ios {\n  height: 10px;\n}\npage-forgotpassword .button-round-md {\n  height: 10px;\n}\npage-forgotpassword .tageinforgot {\n  color: gray;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvZm9yZ290LXBhc3N3b3JkL0Q6XFxTZWVtYVxcUHJvamVjdFxcaXZpcG5pL3NyY1xcYXBwXFxwYWdlc1xcZm9yZ290LXBhc3N3b3JkXFxmb3Jnb3QtcGFzc3dvcmQucGFnZS5zY3NzIiwic3JjL2FwcC9wYWdlcy9mb3Jnb3QtcGFzc3dvcmQvZm9yZ290LXBhc3N3b3JkLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDSTtFQUNFLHNCQUFBO0FDQU47QURFSTtFQUNFLFlBQUE7QUNBTjtBREVJO0VBQ0UsWUFBQTtBQ0FOO0FERUk7RUFDRSxXQUFBO0FDQU4iLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9mb3Jnb3QtcGFzc3dvcmQvZm9yZ290LXBhc3N3b3JkLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbInBhZ2UtZm9yZ290cGFzc3dvcmQge1xyXG4gICAgaW9uLWhlYWRlciB7XHJcbiAgICAgIGJhY2tncm91bmQtY29sb3I6IGJsdWU7XHJcbiAgICB9XHJcbiAgICAuYnV0dG9uLXJvdW5kLWlvcyB7XHJcbiAgICAgIGhlaWdodDogMTBweDtcclxuICAgIH1cclxuICAgIC5idXR0b24tcm91bmQtbWQge1xyXG4gICAgICBoZWlnaHQ6IDEwcHg7XHJcbiAgICB9XHJcbiAgICAudGFnZWluZm9yZ290IHtcclxuICAgICAgY29sb3I6IGdyYXk7XHJcbiAgICB9XHJcbiAgfVxyXG4gICIsInBhZ2UtZm9yZ290cGFzc3dvcmQgaW9uLWhlYWRlciB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsdWU7XG59XG5wYWdlLWZvcmdvdHBhc3N3b3JkIC5idXR0b24tcm91bmQtaW9zIHtcbiAgaGVpZ2h0OiAxMHB4O1xufVxucGFnZS1mb3Jnb3RwYXNzd29yZCAuYnV0dG9uLXJvdW5kLW1kIHtcbiAgaGVpZ2h0OiAxMHB4O1xufVxucGFnZS1mb3Jnb3RwYXNzd29yZCAudGFnZWluZm9yZ290IHtcbiAgY29sb3I6IGdyYXk7XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = ("page-forgotpassword ion-header {\n  background-color: blue;\n}\npage-forgotpassword .button-round-ios {\n  height: 10px;\n}\npage-forgotpassword .button-round-md {\n  height: 10px;\n}\npage-forgotpassword .tageinforgot {\n  color: gray;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RldmlsL0Rlc2t0b3AvaXZpcG5pL3NyYy9hcHAvcGFnZXMvZm9yZ290LXBhc3N3b3JkL2ZvcmdvdC1wYXNzd29yZC5wYWdlLnNjc3MiLCJzcmMvYXBwL3BhZ2VzL2ZvcmdvdC1wYXNzd29yZC9mb3Jnb3QtcGFzc3dvcmQucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNJO0VBQ0Usc0JBQUE7QUNBTjtBREVJO0VBQ0UsWUFBQTtBQ0FOO0FERUk7RUFDRSxZQUFBO0FDQU47QURFSTtFQUNFLFdBQUE7QUNBTiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2ZvcmdvdC1wYXNzd29yZC9mb3Jnb3QtcGFzc3dvcmQucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsicGFnZS1mb3Jnb3RwYXNzd29yZCB7XG4gICAgaW9uLWhlYWRlciB7XG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibHVlO1xuICAgIH1cbiAgICAuYnV0dG9uLXJvdW5kLWlvcyB7XG4gICAgICBoZWlnaHQ6IDEwcHg7XG4gICAgfVxuICAgIC5idXR0b24tcm91bmQtbWQge1xuICAgICAgaGVpZ2h0OiAxMHB4O1xuICAgIH1cbiAgICAudGFnZWluZm9yZ290IHtcbiAgICAgIGNvbG9yOiBncmF5O1xuICAgIH1cbiAgfVxuICAiLCJwYWdlLWZvcmdvdHBhc3N3b3JkIGlvbi1oZWFkZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibHVlO1xufVxucGFnZS1mb3Jnb3RwYXNzd29yZCAuYnV0dG9uLXJvdW5kLWlvcyB7XG4gIGhlaWdodDogMTBweDtcbn1cbnBhZ2UtZm9yZ290cGFzc3dvcmQgLmJ1dHRvbi1yb3VuZC1tZCB7XG4gIGhlaWdodDogMTBweDtcbn1cbnBhZ2UtZm9yZ290cGFzc3dvcmQgLnRhZ2VpbmZvcmdvdCB7XG4gIGNvbG9yOiBncmF5O1xufSJdfQ== */");
 
 /***/ }),
 
@@ -122,6 +122,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _providers_logger_logger__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../providers/logger/logger */ "./src/providers/logger/logger.ts");
 /* harmony import */ var _providers_holders_holders__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../providers/holders/holders */ "./src/providers/holders/holders.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _ionic_native_sms_retriever_ngx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ionic-native/sms-retriever/ngx */ "./node_modules/@ionic-native/sms-retriever/ngx/index.js");
+
 
 
 
@@ -130,7 +132,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let ForgotPasswordPage = class ForgotPasswordPage {
-    constructor(navCtrl, user, toastCtrl, platform, logger, holders, loadingCtrl, router) {
+    constructor(navCtrl, user, toastCtrl, platform, logger, holders, loadingCtrl, router, smsRetriever) {
         this.navCtrl = navCtrl;
         this.user = user;
         this.toastCtrl = toastCtrl;
@@ -139,6 +141,7 @@ let ForgotPasswordPage = class ForgotPasswordPage {
         this.holders = holders;
         this.loadingCtrl = loadingCtrl;
         this.router = router;
+        this.smsRetriever = smsRetriever;
         this.loginId = "";
         this.otp = "";
         this.email = true;
@@ -148,11 +151,13 @@ let ForgotPasswordPage = class ForgotPasswordPage {
     }
     ngOnInit() { }
     ionViewDidLoad() {
+        console.log("ionViewDidLoad OtpPage");
         var permissions = cordova.plugins.permissions;
         var errorCallback = () => {
             this.holders.showSuccessAlert("READ_SMS permission is not turned on");
         };
         permissions.requestPermission(permissions.READ_SMS, (status) => {
+            console.log("vidya1" + JSON.stringify(status));
             // if(!status.hasPermission) {
             //   console.log("vidya"+JSON.stringify(status));
             //   errorCallback();
@@ -162,13 +167,56 @@ let ForgotPasswordPage = class ForgotPasswordPage {
             //   this.getSMS();
             // }
         }, errorCallback);
+        console.log("permissions" + permissions);
     }
+    //=================================================
+    genHash() {
+        // This function is to get hash string of APP.
+        // * @return {Promise<string>} Returns a promise that resolves when successfully generate hash of APP.
+        this.smsRetriever
+            .getAppHash()
+            .then((res) => {
+            console.log(res);
+            alert(res);
+            this.hash = res;
+            // after generating the hash call the genopt
+            // FIXME: uncomment me for test you commented me
+            this.generateOTP();
+            // this.retriveSMS();
+        })
+            .catch((error) => console.error(error));
+    }
+    retriveSMS() {
+        // issues time out after 5 min
+        console.log("Watching SMS");
+        this.smsRetriever
+            .startWatching()
+            .then((res) => {
+            console.log(res);
+            //  <#> 323741 is your 6 digit OTP for MyApp. t3YUyserD4H
+            // logic to retrieve read sms depends on the string
+            // this function will be automatically dissmissed after some time 5min
+            const otp = res.Message.toString().substr(0, 4);
+            alert(`OTP Received - ${otp}`);
+            this.otpNumber = otp;
+            console.log("the otp ii ===>", this.otpNumber);
+            // call to get sms()
+            this.storeSMS();
+        })
+            .catch((error) => {
+            console.error(error);
+            this.storeSMS();
+        });
+        this.storeSMS();
+    }
+    //====================================================
     generateOTP() {
         this.logger.info("invoking generateOTP FN");
-        this.user.generateOTP(this.loginId, (result, data, id) => {
+        this.user.generateOTP(this.loginId, this.hash, (result, data, id) => {
             if (result == "1") {
                 this.logger.debug("checking the data for generateotp " + JSON.stringify(data));
                 this.customer_id = id;
+                console.log("===> cust id", id);
                 this.logger.debug("checking the customerid " + this.customer_id);
                 this.emailButton2 = false;
                 this.emailButton1 = true;
@@ -176,27 +224,43 @@ let ForgotPasswordPage = class ForgotPasswordPage {
                     // //setting the permission for android above 6.0
                     this.holders.presentLoadingCustom();
                     setTimeout(() => {
+                        //TODO: uncomment this not needed
                         this.holders.dissmissLoadingCustom();
-                        this.platform.ready().then(() => {
-                            var permissions = cordova.plugins.permissions;
-                            permissions.checkPermission(permissions.READ_SMS, checkPermissionCallback, null);
-                            this.getSMS();
-                            function checkPermissionCallback(status) {
-                                if (!status.hasPermission) {
-                                    var errorCallback = () => {
-                                        this.holders.showSuccessAlert("READ_SMS permission is not turned on");
-                                    };
-                                    permissions.requestPermission(permissions.READ_SMS, (status) => {
-                                        if (!status.hasPermission) {
-                                            errorCallback();
-                                        }
-                                        else {
-                                            this.getSMS();
-                                        }
-                                    }, errorCallback);
-                                }
-                            }
-                        });
+                        // this.platform.ready().then(() => {
+                        //   var permissions = cordova.plugins.permissions;
+                        //   permissions.checkPermission(
+                        //     permissions.READ_SMS,
+                        //     checkPermissionCallback,
+                        //     null
+                        //   );
+                        //   this.getSMS();
+                        //   function checkPermissionCallback(status) {
+                        //     console.log("checking first " + JSON.stringify(status));
+                        //     if (!status.hasPermission) {
+                        //       console.log("invoking the if state");
+                        //       var errorCallback = () => {
+                        //         this.holders.showSuccessAlert(
+                        //           "READ_SMS permission is not turned on"
+                        //         );
+                        //       };
+                        //       permissions.requestPermission(
+                        //         permissions.READ_SMS,
+                        //         (status) => {
+                        //           console.log(status);
+                        //           if (!status.hasPermission) {
+                        //             errorCallback();
+                        //           } else {
+                        //             this.getSMS();
+                        //           }
+                        //         },
+                        //         errorCallback
+                        //       );
+                        //     }
+                        //   }
+                        // });
+                        console.log("=====>", data);
+                        // calling retriveSMS()
+                        this.retriveSMS();
                     }, 10000);
                 }
                 else {
@@ -205,6 +269,7 @@ let ForgotPasswordPage = class ForgotPasswordPage {
             }
             else {
                 alert(data);
+                console.log("=====>", data);
             }
         });
     }
@@ -224,6 +289,30 @@ let ForgotPasswordPage = class ForgotPasswordPage {
                 alert("Please enter correct OTP");
             }
         });
+    }
+    storeSMS() {
+        if (this.otpNumber) {
+            this.user.validateOTP(this.otpNumber, this.loginId, (result, data, id) => {
+                if (result == "1") {
+                    this.access_token = id;
+                    this.email = false;
+                    this.emailButton1 = false;
+                    this.emailButton2 = false;
+                    this.secondDiv = true;
+                    this.logger.debug("checking access tocken " + this.access_token);
+                }
+                else {
+                    this.logger.error("error of otp" + data);
+                    this.email = false;
+                    this.emailButton2 = true;
+                }
+            });
+        }
+        else {
+            this.logger.info("no otpnumber");
+            this.email = false;
+            this.emailButton2 = true;
+        }
     }
     getSMS() {
         var filter = {
@@ -252,6 +341,7 @@ let ForgotPasswordPage = class ForgotPasswordPage {
                         this.logger.debug("checking the otpNumber " + this.otpNumber);
                         break;
                     }
+                    console.log("Vidya" + this.otpNumber);
                 }
                 if (this.otpNumber) {
                     this.user.validateOTP(this.otpNumber, this.loginId, (result, data, id) => {
@@ -293,37 +383,42 @@ let ForgotPasswordPage = class ForgotPasswordPage {
         });
     }
     changePassword() {
-        var _this = this;
-        var newPassword = {
-            user_id: _this.customer_id,
-            access_token: _this.access_token,
-            password: _this.newpassword,
-        };
-        _this.logger.debug("checking newPassword " + JSON.stringify(newPassword));
-        if (_this.newpassword === _this.conformPassword) {
-            //     let loading = _this.loadingCtrl.create({
-            //  content: ``
-            //  });
-            this.user.newPassword(newPassword, (result, data) => {
-                if (result == "1") {
-                    _this.logger.debug("success callback of the new password");
-                    _this.toastMessage = "Password changed successfully";
-                    _this.holders.dissmissLoadingCustom();
-                    _this.presentToast();
-                    // loading.dismiss();
-                    // _this.navCtrl.setRoot(LoginPage, {});
-                    _this.router.navigateByUrl("/login");
-                }
-                else {
-                    _this.logger.error("error of otp " + data);
-                }
-            });
-        }
-        else {
-            _this.logger.debug("check your password");
-            _this.toastMessage = "Password and re-enter password should be same";
-            _this.presentToast();
-        }
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            console.log("cahnge password called");
+            var _this = this;
+            var newPassword = {
+                user_id: _this.customer_id,
+                access_token: _this.access_token,
+                password: _this.newpassword,
+            };
+            _this.logger.debug("checking newPassword " + JSON.stringify(newPassword));
+            console.log("========> new password data", newPassword);
+            if (_this.newpassword === _this.conformPassword) {
+                this.loading = yield _this.loadingCtrl.create({
+                    message: `<ion-spinner name="bubbles"></ion-spinner>`,
+                });
+                this.loading.present();
+                this.user.newPassword(newPassword, (result, data) => {
+                    if (result == "1") {
+                        _this.logger.debug("success callback of the new password");
+                        _this.toastMessage = "Password changed successfully";
+                        _this.holders.dissmissLoadingCustom();
+                        _this.presentToast();
+                        this.loading.dismiss();
+                        // _this.navCtrl.setRoot(LoginPage, {});
+                        _this.router.navigateByUrl("/login");
+                    }
+                    else {
+                        _this.logger.error("error of otp " + data);
+                    }
+                });
+            }
+            else {
+                _this.logger.debug("check your password");
+                _this.toastMessage = "Password and re-enter password should be same";
+                _this.presentToast();
+            }
+        });
     }
 };
 ForgotPasswordPage.ctorParameters = () => [
@@ -334,7 +429,8 @@ ForgotPasswordPage.ctorParameters = () => [
     { type: _providers_logger_logger__WEBPACK_IMPORTED_MODULE_4__["Logger"] },
     { type: _providers_holders_holders__WEBPACK_IMPORTED_MODULE_5__["Holders"] },
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["LoadingController"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] }
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"] },
+    { type: _ionic_native_sms_retriever_ngx__WEBPACK_IMPORTED_MODULE_7__["SmsRetriever"] }
 ];
 ForgotPasswordPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -349,7 +445,8 @@ ForgotPasswordPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         _providers_logger_logger__WEBPACK_IMPORTED_MODULE_4__["Logger"],
         _providers_holders_holders__WEBPACK_IMPORTED_MODULE_5__["Holders"],
         _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["LoadingController"],
-        _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]])
+        _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"],
+        _ionic_native_sms_retriever_ngx__WEBPACK_IMPORTED_MODULE_7__["SmsRetriever"]])
 ], ForgotPasswordPage);
 
 

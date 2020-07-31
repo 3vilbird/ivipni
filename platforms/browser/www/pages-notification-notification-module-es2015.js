@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\r\n  <ion-toolbar color=\"primary\">\r\n    <ion-buttons slot=\"start\">\r\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\r\n    </ion-buttons>\r\n    <ion-title>Notifications</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n<ion-content>\r\n  <ion-card>\r\n    <ion-card-content>\r\n      <ion-item>\r\n        Manage your push notification from this section &stay update with latest\r\n        products & offer on Auto Parts.\r\n      </ion-item>\r\n      <ion-item (click)=\"updateValue()\">\r\n        <ion-label> Notification</ion-label>\r\n        <ion-toggle [(ngModel)]=\"notify\" (ngModelChange)=\"updateValue()\"></ion-toggle>\r\n      </ion-item>\r\n    </ion-card-content>\r\n  </ion-card>\r\n</ion-content>");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"/\"></ion-back-button>\n    </ion-buttons>\n    <ion-title>Notifications</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n  <ion-card>\n    <ion-card-content>\n      <ion-item>\n        Manage your push notification from this section &stay update with latest\n        products & offer on Auto Parts.\n      </ion-item>\n      <ion-item (click)=\"updateValue()\">\n        <ion-label> Notification</ion-label>\n        <ion-toggle [(ngModel)]=\"notify\" (ngModelChange)=\"updateValue()\"></ion-toggle>\n      </ion-item>\n    </ion-card-content>\n  </ion-card>\n</ion-content>");
 
 /***/ }),
 

@@ -438,7 +438,7 @@ module.exports = webpackAsyncContext;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-app>\r\n  <ion-router-outlet></ion-router-outlet>\r\n</ion-app>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n");
 
 /***/ }),
 
@@ -877,7 +877,7 @@ AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("ion-spinner * {\n  width: 28px;\n  height: 28px;\n  stroke: #444;\n  fill: #222;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvRDpcXFNlZW1hXFxQcm9qZWN0XFxpdmlwbmkvc3JjXFxhcHBcXGFwcC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0ksV0FBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtBQ0FKIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbmlvbi1zcGlubmVyICoge1xyXG4gICAgd2lkdGg6IDI4cHg7XHJcbiAgICBoZWlnaHQ6IDI4cHg7XHJcbiAgICBzdHJva2U6ICM0NDQ7XHJcbiAgICBmaWxsOiAjMjIyO1xyXG4gIH1cclxuICAiLCJpb24tc3Bpbm5lciAqIHtcbiAgd2lkdGg6IDI4cHg7XG4gIGhlaWdodDogMjhweDtcbiAgc3Ryb2tlOiAjNDQ0O1xuICBmaWxsOiAjMjIyO1xufSJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("ion-spinner * {\n  width: 28px;\n  height: 28px;\n  stroke: #444;\n  fill: #222;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RldmlsL0Rlc2t0b3AvaXZpcG5pL3NyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDSSxXQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxVQUFBO0FDQUoiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbmlvbi1zcGlubmVyICoge1xuICAgIHdpZHRoOiAyOHB4O1xuICAgIGhlaWdodDogMjhweDtcbiAgICBzdHJva2U6ICM0NDQ7XG4gICAgZmlsbDogIzIyMjtcbiAgfVxuICAiLCJpb24tc3Bpbm5lciAqIHtcbiAgd2lkdGg6IDI4cHg7XG4gIGhlaWdodDogMjhweDtcbiAgc3Ryb2tlOiAjNDQ0O1xuICBmaWxsOiAjMjIyO1xufSJdfQ== */");
 
 /***/ }),
 
@@ -967,6 +967,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_native_device_ngx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @ionic-native/device/ngx */ "./node_modules/@ionic-native/device/ngx/index.js");
 /* harmony import */ var _ionic_native_onesignal_ngx__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @ionic-native/onesignal/ngx */ "./node_modules/@ionic-native/onesignal/ngx/index.js");
 /* harmony import */ var _ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @ionic-native/in-app-browser/ngx */ "./node_modules/@ionic-native/in-app-browser/ngx/index.js");
+/* harmony import */ var _ionic_native_sms_retriever_ngx__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @ionic-native/sms-retriever/ngx */ "./node_modules/@ionic-native/sms-retriever/ngx/index.js");
+/* harmony import */ var _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @ionic-native/photo-viewer/ngx */ "./node_modules/@ionic-native/photo-viewer/ngx/index.js");
 
 
 
@@ -989,6 +991,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // import { AppVersion } from "@ionic-native/app-version/ngx";
+
+
 
 let AppModule = class AppModule {
 };
@@ -1019,6 +1023,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _ionic_native_onesignal_ngx__WEBPACK_IMPORTED_MODULE_20__["OneSignal"],
             // AppVersion,
             _ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_21__["InAppBrowser"],
+            _ionic_native_sms_retriever_ngx__WEBPACK_IMPORTED_MODULE_22__["SmsRetriever"],
+            _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_23__["PhotoViewer"],
             { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] },
         ],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]],
@@ -1390,7 +1396,7 @@ let Users = class Users {
         this.restService.post("/validateUser", {
             loginId: loginId,
             password: passwd,
-            device_token: deviceToken
+            device_token: deviceToken,
         }, function (data) {
             _this.logger.debug("data " + JSON.stringify(data));
             _this.holders.setLoginData(data);
@@ -1399,7 +1405,7 @@ let Users = class Users {
                     callbackFn(data.status, JSON.stringify({
                         userId: data.data.customer.customer_id,
                         authToken: data.data.customer.access_token,
-                        message: data.message
+                        message: data.message,
                     }));
                 }
                 else {
@@ -1414,10 +1420,10 @@ let Users = class Users {
         });
     }
     //ForgotPasswd page post call's
-    generateOTP(loginId, callbackFn) {
+    generateOTP(loginId, hash, callbackFn) {
         var _this = this;
         _this.logger.debug("Generating  OTP for : " + JSON.stringify(loginId));
-        this.restService.post("/generateOTP", { loginId: loginId }, function (data) {
+        this.restService.post("/generateOTP", { loginId: loginId, hash: hash }, function (data) {
             _this.logger.debug("generate OTP : " + JSON.stringify(data));
             if (callbackFn) {
                 if (data.status == "1") {
@@ -1505,7 +1511,7 @@ let Users = class Users {
                 if (data.status == "1") {
                     callbckFn(data.status, JSON.stringify({
                         message: data.data.message,
-                        customer_id: data.data.customer_id
+                        customer_id: data.data.customer_id,
                     }));
                 }
                 else {
@@ -1945,8 +1951,8 @@ __webpack_require__.r(__webpack_exports__);
 let Configurator = class Configurator {
     constructor() {
         this.logLevel = 1; // 1 - Errors, 2- Errors/Info , 3 - Error/Info/Debug
-        this.restServerBaseUrl = "http://34.87.43.10/ivipni/index.php?";
-        //public restServerBaseUrl = "http://localhost:8080/ivipni/index.php?";
+        // public restServerBaseUrl = "http://34.87.43.10/ivipni/index.php?";
+        this.restServerBaseUrl = "http://localhost:8080/ivipni/index.php?";
         this.restServerControllerUrl = "route=restapi/restapi";
     }
 };
@@ -2511,7 +2517,7 @@ Rest = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Seema\Project\ivipni\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/devil/Desktop/ivipni/src/main.ts */"./src/main.ts");
 
 
 /***/ })

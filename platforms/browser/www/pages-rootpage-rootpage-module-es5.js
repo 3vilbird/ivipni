@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-content>\r\n\r\n  <div padding></div>\r\n  <div padding></div>\r\n  <div padding></div>\r\n\r\n  <div padding>\r\n      <img src=\"../../../assets/images/rootpage/rootpage.png\" />\r\n  </div>\r\n  <br>\r\n\r\n  <div padding></div>\r\n  <div padding></div>\r\n  <div padding></div>\r\n\r\n</ion-content>";
+    __webpack_exports__["default"] = "<ion-content>\n\n  <div padding></div>\n  <div padding></div>\n  <div padding></div>\n\n  <div padding>\n      <img src=\"../../../assets/images/rootpage/rootpage.png\" />\n  </div>\n  <br>\n\n  <div padding></div>\n  <div padding></div>\n  <div padding></div>\n\n</ion-content>";
     /***/
   },
 
@@ -174,7 +174,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "page-rootpage div img {\n  max-height: 100px;\n  margin-left: auto;\n  margin-right: auto;\n  display: block;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvcm9vdHBhZ2UvRDpcXFNlZW1hXFxQcm9qZWN0XFxpdmlwbmkvc3JjXFxhcHBcXHBhZ2VzXFxyb290cGFnZVxccm9vdHBhZ2UucGFnZS5zY3NzIiwic3JjL2FwcC9wYWdlcy9yb290cGFnZS9yb290cGFnZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0k7RUFDRSxpQkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxjQUFBO0FDQU4iLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9yb290cGFnZS9yb290cGFnZS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJwYWdlLXJvb3RwYWdlIHtcclxuICAgIGRpdiBpbWcge1xyXG4gICAgICBtYXgtaGVpZ2h0OiAxMDBweDtcclxuICAgICAgbWFyZ2luLWxlZnQ6IGF1dG87XHJcbiAgICAgIG1hcmdpbi1yaWdodDogYXV0bztcclxuICAgICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICB9XHJcbiAgXHJcbiAgICAuY29udGVudC1pb3Mge1xyXG4gICAgIFxyXG4gICAgfVxyXG4gICAgLmNvbnRlbnQtbWQge1xyXG4gICAgIFxyXG4gICAgfVxyXG4gIH1cclxuICAiLCJwYWdlLXJvb3RwYWdlIGRpdiBpbWcge1xuICBtYXgtaGVpZ2h0OiAxMDBweDtcbiAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gIG1hcmdpbi1yaWdodDogYXV0bztcbiAgZGlzcGxheTogYmxvY2s7XG59Il19 */";
+    __webpack_exports__["default"] = "page-rootpage div img {\n  max-height: 100px;\n  margin-left: auto;\n  margin-right: auto;\n  display: block;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RldmlsL0Rlc2t0b3AvaXZpcG5pL3NyYy9hcHAvcGFnZXMvcm9vdHBhZ2Uvcm9vdHBhZ2UucGFnZS5zY3NzIiwic3JjL2FwcC9wYWdlcy9yb290cGFnZS9yb290cGFnZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0k7RUFDRSxpQkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxjQUFBO0FDQU4iLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9yb290cGFnZS9yb290cGFnZS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJwYWdlLXJvb3RwYWdlIHtcbiAgICBkaXYgaW1nIHtcbiAgICAgIG1heC1oZWlnaHQ6IDEwMHB4O1xuICAgICAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gICAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XG4gICAgICBkaXNwbGF5OiBibG9jaztcbiAgICB9XG4gIFxuICAgIC5jb250ZW50LWlvcyB7XG4gICAgIFxuICAgIH1cbiAgICAuY29udGVudC1tZCB7XG4gICAgIFxuICAgIH1cbiAgfVxuICAiLCJwYWdlLXJvb3RwYWdlIGRpdiBpbWcge1xuICBtYXgtaGVpZ2h0OiAxMDBweDtcbiAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gIG1hcmdpbi1yaWdodDogYXV0bztcbiAgZGlzcGxheTogYmxvY2s7XG59Il19 */";
     /***/
   },
 

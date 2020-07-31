@@ -1,11 +1,14 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-nav color="primary" padding>
-      <ion-title>{{headerName}}</ion-title>
-      <ion-button (click)="quickOrderFn();" end>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{headerName}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="quickOrderFn()">
         <ion-icon name="search"></ion-icon>
       </ion-button>
-    </ion-nav>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 

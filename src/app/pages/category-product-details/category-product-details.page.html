@@ -1,14 +1,15 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-nav color="primary">
-      <ion-title>{{categoryname}}</ion-title>
-      <ion-buttons end>
-        <button ion-button (click)="cartFn();">
-          <ion-icon name="cart"></ion-icon>
-          <div class="qntyColor">{{cartCount}}</div>
-        </button>
-      </ion-buttons>
-    </ion-nav>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{categoryname}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cartFn();">
+        <ion-icon name="cart"></ion-icon>
+        <ion-badge class="cart-badge" color="danger">{{cartCount}}</ion-badge>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 

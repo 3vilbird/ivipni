@@ -128,6 +128,14 @@ module.exports = [
         "clobbers": [
             "OneSignal"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-sms-retriever-manager/www/smsRetriever.js",
+        "id": "cordova-plugin-sms-retriever-manager.AndroidSmsRetriever",
+        "pluginId": "cordova-plugin-sms-retriever-manager",
+        "clobbers": [
+            "cordova.plugins.smsRetriever"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -146,7 +154,8 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.4.2",
     "cordova-plugin-whitelist": "1.3.3",
     "cordova-sms-plugin": "1.0.0",
-    "onesignal-cordova-plugin": "2.8.4"
+    "onesignal-cordova-plugin": "2.8.4",
+    "cordova-plugin-sms-retriever-manager": "1.0.2"
 }
 // BOTTOM OF METADATA
 });
