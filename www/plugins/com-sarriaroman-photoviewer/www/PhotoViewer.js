@@ -1,5 +1,4 @@
-cordova.define("com-sarriaroman-photoviewer.PhotoViewer", function(require, exports, module) {
-"use strict";
+cordova.define("com-sarriaroman-photoviewer.PhotoViewer", function(require, exports, module) { "use strict";
 // @ts-ignore
 var exec = require('cordova/exec');
 var PhotoViewer = /** @class */ (function () {

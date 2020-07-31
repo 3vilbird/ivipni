@@ -305,8 +305,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           // This function is to get hash string of APP.
           // * @return {Promise<string>} Returns a promise that resolves when successfully generate hash of APP.
           this.smsRetriever.getAppHash().then(function (res) {
-            console.log(res);
-            alert(res);
+            console.log(res); // alert(res);
+
             _this3.hash = res; // after generating the hash call the genopt
             // FIXME: uncomment me for test you commented me
 
@@ -356,10 +356,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                       _this4.loading.dismiss();
 
                       _this4.storeSMS();
-                    });
-                    this.storeSMS();
+                    }); // this.storeSMS();
 
-                  case 7:
+                  case 6:
                   case "end":
                     return _context.stop();
                 }

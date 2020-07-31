@@ -2012,9 +2012,9 @@ let Holders = class Holders {
                         text: "Ok",
                         handler: () => {
                             _this.logger.info("clicked cancel button");
-                        }
-                    }
-                ]
+                        },
+                    },
+                ],
             });
             yield networkAlert.present();
         });
@@ -2030,28 +2030,28 @@ let Holders = class Holders {
                         text: "Ok",
                         handler: () => {
                             _this.logger.info("clicked showErrorAlert cancel button");
-                        }
-                    }
-                ]
+                        },
+                    },
+                ],
             });
             yield networkAlert.present();
         });
     }
-    // presentLoadingCustom() {
-    //   this.loading = this.loadingCtrl.create({
-    //     spinner: "crescent"
+    presentLoadingCustom() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.loading = yield this.loadingCtrl.create({
+                spinner: "crescent",
+            });
+            this.loading.present();
+        });
+    }
+    // async presentLoadingCustom() {
+    //   this.loading = await this.loadingCtrl.create({
+    //     message: ``,
+    //     duration: 2000,
     //   });
     //   this.loading.present();
     // }
-    presentLoadingCustom() {
-        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
-            let loading = yield this.loadingCtrl.create({
-                message: ``,
-                duration: 2000,
-            });
-            loading.present();
-        });
-    }
     setLoginData(data) {
         this.loginData = data;
         this.logger.debug("checking the login data" + data);
@@ -2084,9 +2084,9 @@ let Holders = class Holders {
                         text: "Ok",
                         handler: () => {
                             _this.logger.info("clicked showErrorAlert cancel button");
-                        }
-                    }
-                ]
+                        },
+                    },
+                ],
             });
             yield networkAlert.present();
         });

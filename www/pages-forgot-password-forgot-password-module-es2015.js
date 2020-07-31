@@ -177,7 +177,7 @@ let ForgotPasswordPage = class ForgotPasswordPage {
             .getAppHash()
             .then((res) => {
             console.log(res);
-            alert(res);
+            // alert(res);
             this.hash = res;
             // after generating the hash call the genopt
             // FIXME: uncomment me for test you commented me
@@ -214,7 +214,7 @@ let ForgotPasswordPage = class ForgotPasswordPage {
                 this.loading.dismiss();
                 this.storeSMS();
             });
-            this.storeSMS();
+            // this.storeSMS();
         });
     }
     //====================================================

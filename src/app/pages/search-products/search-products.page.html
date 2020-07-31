@@ -1,4 +1,4 @@
-<ion-card>
+<!-- <ion-card>
   <form [formGroup]="myForm" (ngSubmit)="searchText()">
     <ion-row>
       <ion-col size="9">
@@ -17,7 +17,16 @@
       </ion-col>
     </ion-row>
   </form>
-</ion-card>
+</ion-card> -->
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-searchbar (search)="doSearch($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content padding class="products">
   <div class="borderr" *ngFor=" let category of catprodArray; let idx = index">

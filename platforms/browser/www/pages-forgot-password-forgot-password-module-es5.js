@@ -305,8 +305,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           // This function is to get hash string of APP.
           // * @return {Promise<string>} Returns a promise that resolves when successfully generate hash of APP.
           this.smsRetriever.getAppHash().then(function (res) {
-            console.log(res);
-            alert(res);
+            console.log(res); // alert(res);
+
             _this3.hash = res; // after generating the hash call the genopt
             // FIXME: uncomment me for test you commented me
 
@@ -319,27 +319,52 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "retriveSMS",
         value: function retriveSMS() {
-          var _this4 = this;
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee() {
+            var _this4 = this;
 
-          // issues time out after 5 min
-          console.log("Watching SMS");
-          this.smsRetriever.startWatching().then(function (res) {
-            console.log(res); //  <#> 323741 is your 6 digit OTP for MyApp. t3YUyserD4H
-            // logic to retrieve read sms depends on the string
-            // this function will be automatically dissmissed after some time 5min
+            return regeneratorRuntime.wrap(function _callee$(_context) {
+              while (1) {
+                switch (_context.prev = _context.next) {
+                  case 0:
+                    _context.next = 2;
+                    return this.loadingCtrl.create({
+                      message: "<ion-spinner name=\"bubbles\"></ion-spinner>"
+                    });
 
-            var otp = res.Message.toString().substr(0, 4);
-            alert("OTP Received - ".concat(otp));
-            _this4.otpNumber = otp;
-            console.log("the otp ii ===>", _this4.otpNumber); // call to get sms()
+                  case 2:
+                    this.loading = _context.sent;
+                    this.loading.present();
+                    console.log("Watching SMS");
+                    this.smsRetriever.startWatching().then(function (res) {
+                      console.log(res); //  <#> 323741 is your 6 digit OTP for MyApp. t3YUyserD4H
+                      // logic to retrieve read sms depends on the string
+                      // this function will be automatically dissmissed after some time 5min
 
-            _this4.storeSMS();
-          }).catch(function (error) {
-            console.error(error);
+                      var otp = res.Message.toString().substr(0, 4);
+                      alert("OTP Received - ".concat(otp));
+                      _this4.otpNumber = otp;
+                      console.log("the otp ii ===>", _this4.otpNumber); // call to get sms()
 
-            _this4.storeSMS();
-          });
-          this.storeSMS();
+                      _this4.loading.dismiss();
+
+                      _this4.storeSMS();
+                    }).catch(function (error) {
+                      console.error(error);
+
+                      _this4.loading.dismiss();
+
+                      _this4.storeSMS();
+                    }); // this.storeSMS();
+
+                  case 6:
+                  case "end":
+                    return _context.stop();
+                }
+              }
+            }, _callee, this);
+          }));
         } //====================================================
 
       }, {
@@ -536,13 +561,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function presentToast() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee() {
+          regeneratorRuntime.mark(function _callee2() {
             var toast;
-            return regeneratorRuntime.wrap(function _callee$(_context) {
+            return regeneratorRuntime.wrap(function _callee2$(_context2) {
               while (1) {
-                switch (_context.prev = _context.next) {
+                switch (_context2.prev = _context2.next) {
                   case 0:
-                    _context.next = 2;
+                    _context2.next = 2;
                     return this.toastCtrl.create({
                       message: this.toastMessage,
                       duration: 1000,
@@ -550,7 +575,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                     });
 
                   case 2:
-                    toast = _context.sent;
+                    toast = _context2.sent;
                     // toast.onDidDismiss(() => {
                     //   this.logger.info("Dismissed toast");
                     // });
@@ -558,10 +583,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
                   case 4:
                   case "end":
-                    return _context.stop();
+                    return _context2.stop();
                 }
               }
-            }, _callee, this);
+            }, _callee2, this);
           }));
         }
       }, {
@@ -569,14 +594,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function changePassword() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee2() {
+          regeneratorRuntime.mark(function _callee3() {
             var _this9 = this;
 
             var _this, newPassword;
 
-            return regeneratorRuntime.wrap(function _callee2$(_context2) {
+            return regeneratorRuntime.wrap(function _callee3$(_context3) {
               while (1) {
-                switch (_context2.prev = _context2.next) {
+                switch (_context3.prev = _context3.next) {
                   case 0:
                     console.log("cahnge password called");
                     _this = this;
@@ -591,17 +616,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                     console.log("========> new password data", newPassword);
 
                     if (!(_this.newpassword === _this.conformPassword)) {
-                      _context2.next = 13;
+                      _context3.next = 13;
                       break;
                     }
 
-                    _context2.next = 8;
+                    _context3.next = 8;
                     return _this.loadingCtrl.create({
                       message: "<ion-spinner name=\"bubbles\"></ion-spinner>"
                     });
 
                   case 8:
-                    this.loading = _context2.sent;
+                    this.loading = _context3.sent;
                     this.loading.present();
                     this.user.newPassword(newPassword, function (result, data) {
                       if (result == "1") {
@@ -621,7 +646,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                         _this.logger.error("error of otp " + data);
                       }
                     });
-                    _context2.next = 16;
+                    _context3.next = 16;
                     break;
 
                   case 13:
@@ -633,10 +658,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
                   case 16:
                   case "end":
-                    return _context2.stop();
+                    return _context3.stop();
                 }
               }
-            }, _callee2, this);
+            }, _callee3, this);
           }));
         }
       }]);

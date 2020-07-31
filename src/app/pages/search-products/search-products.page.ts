@@ -62,16 +62,13 @@ export class SearchProductsPage implements OnInit {
   ionViewDidLoad() {
     this.logger.info("Hello SearchProducts Page");
   }
-
-
-
-
- async searchText() {
+  //FIXME:
+  async searchText() {
     let loading = await this.loadingCtrl.create({
       message: ``,
     });
     this.page = 1;
-    this.searchValue = this.myForm.value.search;
+    // this.searchValue = this.myForm.value.search;
     let searchData = {
       search: this.searchValue,
     };
@@ -373,7 +370,7 @@ export class SearchProductsPage implements OnInit {
     }
   }
 
- async presentToast() {
+  async presentToast() {
     let toast = await this.toastCtrl.create({
       message: this.toastMessage,
       duration: 1000,
@@ -384,7 +381,7 @@ export class SearchProductsPage implements OnInit {
     //   this.logger.info("Dismissed toast");
     // });
 
-     toast.present();
+    toast.present();
   }
 
   addToCart(category, products) {
@@ -661,6 +658,16 @@ export class SearchProductsPage implements OnInit {
 
   addToCartQt() {
     this.networkService.showSuccessAlert("this product has no quantity");
+  }
+  doSearch(event) {
+    console.log(event.target.value);
+    if (event.target.value !== "") {
+      this.searchValue = event.target.value;
+      this.searchText();
+    } else {
+      // alert("Search field is empty");
+      this.networkService.showSuccessAlert("please enter minmum 3 charecters");
+    }
   }
 
   ngOnInit() {}

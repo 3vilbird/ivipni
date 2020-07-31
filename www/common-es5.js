@@ -1322,9 +1322,16 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                         loading.dismiss();
 
+                        _this.myForm.reset();
+
+                        _this.loginMsg = "";
+
                         _this.router.navigateByUrl("/home");
                       } else {
                         loading.dismiss();
+
+                        _this.myForm.reset();
+
                         _this.loginMsg = data;
                       }
                     });

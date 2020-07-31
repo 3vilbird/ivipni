@@ -2960,33 +2960,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               }
             }, _callee2, this);
           }));
-        } // presentLoadingCustom() {
-        //   this.loading = this.loadingCtrl.create({
-        //     spinner: "crescent"
-        //   });
-        //   this.loading.present();
-        // }
-
+        }
       }, {
         key: "presentLoadingCustom",
         value: function presentLoadingCustom() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee3() {
-            var loading;
             return regeneratorRuntime.wrap(function _callee3$(_context3) {
               while (1) {
                 switch (_context3.prev = _context3.next) {
                   case 0:
                     _context3.next = 2;
                     return this.loadingCtrl.create({
-                      message: "",
-                      duration: 2000
+                      spinner: "crescent"
                     });
 
                   case 2:
-                    loading = _context3.sent;
-                    loading.present();
+                    this.loading = _context3.sent;
+                    this.loading.present();
 
                   case 4:
                   case "end":
@@ -2995,7 +2987,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               }
             }, _callee3, this);
           }));
-        }
+        } // async presentLoadingCustom() {
+        //   this.loading = await this.loadingCtrl.create({
+        //     message: ``,
+        //     duration: 2000,
+        //   });
+        //   this.loading.present();
+        // }
+
       }, {
         key: "setLoginData",
         value: function setLoginData(data) {
