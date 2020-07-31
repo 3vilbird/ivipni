@@ -1,4 +1,5 @@
-cordova.define("onesignal-cordova-plugin.OneSignal", function(require, exports, module) { /**
+cordova.define("onesignal-cordova-plugin.OneSignal", function(require, exports, module) {
+/**
  * Modified MIT License
  *
  * Copyright 2019 OneSignal

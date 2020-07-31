@@ -1,4 +1,5 @@
-cordova.define("com.razorpay.cordova.RazorpayCheckout", function(require, exports, module) { /*global cordova, module*/
+cordova.define("com.razorpay.cordova.RazorpayCheckout", function(require, exports, module) {
+/*global cordova, module*/
 
 var RazorpayCheckout = module.exports = {
     open: function (options, successCallback, errorCallback) {

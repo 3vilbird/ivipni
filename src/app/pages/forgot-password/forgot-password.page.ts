@@ -85,7 +85,7 @@ export class ForgotPasswordPage implements OnInit {
       .getAppHash()
       .then((res: any) => {
         console.log(res);
-        alert(res);
+        // alert(res);
         this.hash = res;
         // after generating the hash call the genopt
         // FIXME: uncomment me for test you commented me
@@ -95,8 +95,12 @@ export class ForgotPasswordPage implements OnInit {
       .catch((error: any) => console.error(error));
   }
 
-  retriveSMS() {
+  async retriveSMS() {
     // issues time out after 5 min
+    this.loading = await this.loadingCtrl.create({
+      message: `<ion-spinner name="bubbles"></ion-spinner>`,
+    });
+    this.loading.present();
 
     console.log("Watching SMS");
     this.smsRetriever
@@ -112,13 +116,15 @@ export class ForgotPasswordPage implements OnInit {
         console.log("the otp ii ===>", this.otpNumber);
 
         // call to get sms()
+        this.loading.dismiss();
         this.storeSMS();
       })
       .catch((error: any) => {
         console.error(error);
+        this.loading.dismiss();
         this.storeSMS();
       });
-    this.storeSMS();
+    // this.storeSMS();
   }
 
   //====================================================

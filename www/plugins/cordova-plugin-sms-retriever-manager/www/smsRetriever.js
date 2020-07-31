@@ -1,4 +1,5 @@
-cordova.define("cordova-plugin-sms-retriever-manager.AndroidSmsRetriever", function(require, exports, module) { var SmsRetrieverLoader = function(require, exports, module) {
+cordova.define("cordova-plugin-sms-retriever-manager.AndroidSmsRetriever", function(require, exports, module) {
+var SmsRetrieverLoader = function(require, exports, module) {
   var exec = require('cordova/exec');
 
   function SmsRetriever() {}

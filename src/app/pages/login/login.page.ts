@@ -68,10 +68,12 @@ export class LoginPage implements OnInit {
           this.storage.set("passwd", this.myForm.value.password);
           this.rest.setAuthToken(_dataObj.userId, _dataObj.authToken);
           loading.dismiss();
+          this.myForm.reset();
+          this.loginMsg = "";
           this.router.navigateByUrl("/home");
         } else {
           loading.dismiss();
-
+          this.myForm.reset();
           this.loginMsg = data;
         }
       }

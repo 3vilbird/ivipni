@@ -187,27 +187,35 @@ let ForgotPasswordPage = class ForgotPasswordPage {
             .catch((error) => console.error(error));
     }
     retriveSMS() {
-        // issues time out after 5 min
-        console.log("Watching SMS");
-        this.smsRetriever
-            .startWatching()
-            .then((res) => {
-            console.log(res);
-            //  <#> 323741 is your 6 digit OTP for MyApp. t3YUyserD4H
-            // logic to retrieve read sms depends on the string
-            // this function will be automatically dissmissed after some time 5min
-            const otp = res.Message.toString().substr(0, 4);
-            alert(`OTP Received - ${otp}`);
-            this.otpNumber = otp;
-            console.log("the otp ii ===>", this.otpNumber);
-            // call to get sms()
-            this.storeSMS();
-        })
-            .catch((error) => {
-            console.error(error);
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            // issues time out after 5 min
+            this.loading = yield this.loadingCtrl.create({
+                message: `<ion-spinner name="bubbles"></ion-spinner>`,
+            });
+            this.loading.present();
+            console.log("Watching SMS");
+            this.smsRetriever
+                .startWatching()
+                .then((res) => {
+                console.log(res);
+                //  <#> 323741 is your 6 digit OTP for MyApp. t3YUyserD4H
+                // logic to retrieve read sms depends on the string
+                // this function will be automatically dissmissed after some time 5min
+                const otp = res.Message.toString().substr(0, 4);
+                alert(`OTP Received - ${otp}`);
+                this.otpNumber = otp;
+                console.log("the otp ii ===>", this.otpNumber);
+                // call to get sms()
+                this.loading.dismiss();
+                this.storeSMS();
+            })
+                .catch((error) => {
+                console.error(error);
+                this.loading.dismiss();
+                this.storeSMS();
+            });
             this.storeSMS();
         });
-        this.storeSMS();
     }
     //====================================================
     generateOTP() {

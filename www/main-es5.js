@@ -2806,7 +2806,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       this.logLevel = 1; // 1 - Errors, 2- Errors/Info , 3 - Error/Info/Debug
       // public restServerBaseUrl = "http://34.87.43.10/ivipni/index.php?";
 
-      this.restServerBaseUrl = "http://localhost:8080/ivipni/index.php?";
+      this.restServerBaseUrl = "http://192.168.43.209:8080/ivipni/index.php?";
       this.restServerControllerUrl = "route=restapi/restapi";
     };
 

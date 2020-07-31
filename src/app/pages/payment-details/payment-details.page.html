@@ -36,7 +36,8 @@
           <p>Amount:</p>
         </ion-col>
         <ion-col class="col2">
-          <p>{{twentyfiveamount | currency:'INR':true}}</p>
+          <!-- FIXME: earlier it was {twentyfiveamount} -->
+          <p>{{total | currency:'INR':true}}</p>
         </ion-col>
       </ion-row>
       <ion-row>

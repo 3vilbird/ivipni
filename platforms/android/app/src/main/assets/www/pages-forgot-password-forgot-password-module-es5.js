@@ -174,7 +174,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "page-forgotpassword ion-header {\n  background-color: blue;\n}\npage-forgotpassword .button-round-ios {\n  height: 10px;\n}\npage-forgotpassword .button-round-md {\n  height: 10px;\n}\npage-forgotpassword .tageinforgot {\n  color: gray;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RldmlsL3ZvbHVtZS9wcm9qZWN0cy9mcmVlbGFuY2luZ3dvcmsvbmV3X3dvcmsvaXZpcG5pLTEvc3JjL2FwcC9wYWdlcy9mb3Jnb3QtcGFzc3dvcmQvZm9yZ290LXBhc3N3b3JkLnBhZ2Uuc2NzcyIsInNyYy9hcHAvcGFnZXMvZm9yZ290LXBhc3N3b3JkL2ZvcmdvdC1wYXNzd29yZC5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0k7RUFDRSxzQkFBQTtBQ0FOO0FERUk7RUFDRSxZQUFBO0FDQU47QURFSTtFQUNFLFlBQUE7QUNBTjtBREVJO0VBQ0UsV0FBQTtBQ0FOIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvZm9yZ290LXBhc3N3b3JkL2ZvcmdvdC1wYXNzd29yZC5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJwYWdlLWZvcmdvdHBhc3N3b3JkIHtcbiAgICBpb24taGVhZGVyIHtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6IGJsdWU7XG4gICAgfVxuICAgIC5idXR0b24tcm91bmQtaW9zIHtcbiAgICAgIGhlaWdodDogMTBweDtcbiAgICB9XG4gICAgLmJ1dHRvbi1yb3VuZC1tZCB7XG4gICAgICBoZWlnaHQ6IDEwcHg7XG4gICAgfVxuICAgIC50YWdlaW5mb3Jnb3Qge1xuICAgICAgY29sb3I6IGdyYXk7XG4gICAgfVxuICB9XG4gICIsInBhZ2UtZm9yZ290cGFzc3dvcmQgaW9uLWhlYWRlciB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsdWU7XG59XG5wYWdlLWZvcmdvdHBhc3N3b3JkIC5idXR0b24tcm91bmQtaW9zIHtcbiAgaGVpZ2h0OiAxMHB4O1xufVxucGFnZS1mb3Jnb3RwYXNzd29yZCAuYnV0dG9uLXJvdW5kLW1kIHtcbiAgaGVpZ2h0OiAxMHB4O1xufVxucGFnZS1mb3Jnb3RwYXNzd29yZCAudGFnZWluZm9yZ290IHtcbiAgY29sb3I6IGdyYXk7XG59Il19 */";
+    __webpack_exports__["default"] = "page-forgotpassword ion-header {\n  background-color: blue;\n}\npage-forgotpassword .button-round-ios {\n  height: 10px;\n}\npage-forgotpassword .button-round-md {\n  height: 10px;\n}\npage-forgotpassword .tageinforgot {\n  color: gray;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RldmlsL0Rlc2t0b3AvaXZpcG5pL3NyYy9hcHAvcGFnZXMvZm9yZ290LXBhc3N3b3JkL2ZvcmdvdC1wYXNzd29yZC5wYWdlLnNjc3MiLCJzcmMvYXBwL3BhZ2VzL2ZvcmdvdC1wYXNzd29yZC9mb3Jnb3QtcGFzc3dvcmQucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNJO0VBQ0Usc0JBQUE7QUNBTjtBREVJO0VBQ0UsWUFBQTtBQ0FOO0FERUk7RUFDRSxZQUFBO0FDQU47QURFSTtFQUNFLFdBQUE7QUNBTiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2ZvcmdvdC1wYXNzd29yZC9mb3Jnb3QtcGFzc3dvcmQucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsicGFnZS1mb3Jnb3RwYXNzd29yZCB7XG4gICAgaW9uLWhlYWRlciB7XG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibHVlO1xuICAgIH1cbiAgICAuYnV0dG9uLXJvdW5kLWlvcyB7XG4gICAgICBoZWlnaHQ6IDEwcHg7XG4gICAgfVxuICAgIC5idXR0b24tcm91bmQtbWQge1xuICAgICAgaGVpZ2h0OiAxMHB4O1xuICAgIH1cbiAgICAudGFnZWluZm9yZ290IHtcbiAgICAgIGNvbG9yOiBncmF5O1xuICAgIH1cbiAgfVxuICAiLCJwYWdlLWZvcmdvdHBhc3N3b3JkIGlvbi1oZWFkZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibHVlO1xufVxucGFnZS1mb3Jnb3RwYXNzd29yZCAuYnV0dG9uLXJvdW5kLWlvcyB7XG4gIGhlaWdodDogMTBweDtcbn1cbnBhZ2UtZm9yZ290cGFzc3dvcmQgLmJ1dHRvbi1yb3VuZC1tZCB7XG4gIGhlaWdodDogMTBweDtcbn1cbnBhZ2UtZm9yZ290cGFzc3dvcmQgLnRhZ2VpbmZvcmdvdCB7XG4gIGNvbG9yOiBncmF5O1xufSJdfQ== */";
     /***/
   },
 
@@ -319,27 +319,53 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "retriveSMS",
         value: function retriveSMS() {
-          var _this4 = this;
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee() {
+            var _this4 = this;
 
-          // issues time out after 5 min
-          console.log("Watching SMS");
-          this.smsRetriever.startWatching().then(function (res) {
-            console.log(res); //  <#> 323741 is your 6 digit OTP for MyApp. t3YUyserD4H
-            // logic to retrieve read sms depends on the string
-            // this function will be automatically dissmissed after some time 5min
+            return regeneratorRuntime.wrap(function _callee$(_context) {
+              while (1) {
+                switch (_context.prev = _context.next) {
+                  case 0:
+                    _context.next = 2;
+                    return this.loadingCtrl.create({
+                      message: "<ion-spinner name=\"bubbles\"></ion-spinner>"
+                    });
 
-            var otp = res.Message.toString().substr(0, 4);
-            alert("OTP Received - ".concat(otp));
-            _this4.otpNumber = otp;
-            console.log("the otp ii ===>", _this4.otpNumber); // call to get sms()
+                  case 2:
+                    this.loading = _context.sent;
+                    this.loading.present();
+                    console.log("Watching SMS");
+                    this.smsRetriever.startWatching().then(function (res) {
+                      console.log(res); //  <#> 323741 is your 6 digit OTP for MyApp. t3YUyserD4H
+                      // logic to retrieve read sms depends on the string
+                      // this function will be automatically dissmissed after some time 5min
 
-            _this4.storeSMS();
-          }).catch(function (error) {
-            console.error(error);
+                      var otp = res.Message.toString().substr(0, 4);
+                      alert("OTP Received - ".concat(otp));
+                      _this4.otpNumber = otp;
+                      console.log("the otp ii ===>", _this4.otpNumber); // call to get sms()
 
-            _this4.storeSMS();
-          });
-          this.storeSMS();
+                      _this4.loading.dismiss();
+
+                      _this4.storeSMS();
+                    }).catch(function (error) {
+                      console.error(error);
+
+                      _this4.loading.dismiss();
+
+                      _this4.storeSMS();
+                    });
+                    this.storeSMS();
+
+                  case 7:
+                  case "end":
+                    return _context.stop();
+                }
+              }
+            }, _callee, this);
+          }));
         } //====================================================
 
       }, {
@@ -536,13 +562,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function presentToast() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee() {
+          regeneratorRuntime.mark(function _callee2() {
             var toast;
-            return regeneratorRuntime.wrap(function _callee$(_context) {
+            return regeneratorRuntime.wrap(function _callee2$(_context2) {
               while (1) {
-                switch (_context.prev = _context.next) {
+                switch (_context2.prev = _context2.next) {
                   case 0:
-                    _context.next = 2;
+                    _context2.next = 2;
                     return this.toastCtrl.create({
                       message: this.toastMessage,
                       duration: 1000,
@@ -550,7 +576,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                     });
 
                   case 2:
-                    toast = _context.sent;
+                    toast = _context2.sent;
                     // toast.onDidDismiss(() => {
                     //   this.logger.info("Dismissed toast");
                     // });
@@ -558,10 +584,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
                   case 4:
                   case "end":
-                    return _context.stop();
+                    return _context2.stop();
                 }
               }
-            }, _callee, this);
+            }, _callee2, this);
           }));
         }
       }, {
@@ -569,14 +595,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function changePassword() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee2() {
+          regeneratorRuntime.mark(function _callee3() {
             var _this9 = this;
 
             var _this, newPassword;
 
-            return regeneratorRuntime.wrap(function _callee2$(_context2) {
+            return regeneratorRuntime.wrap(function _callee3$(_context3) {
               while (1) {
-                switch (_context2.prev = _context2.next) {
+                switch (_context3.prev = _context3.next) {
                   case 0:
                     console.log("cahnge password called");
                     _this = this;
@@ -591,17 +617,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                     console.log("========> new password data", newPassword);
 
                     if (!(_this.newpassword === _this.conformPassword)) {
-                      _context2.next = 13;
+                      _context3.next = 13;
                       break;
                     }
 
-                    _context2.next = 8;
+                    _context3.next = 8;
                     return _this.loadingCtrl.create({
                       message: "<ion-spinner name=\"bubbles\"></ion-spinner>"
                     });
 
                   case 8:
-                    this.loading = _context2.sent;
+                    this.loading = _context3.sent;
                     this.loading.present();
                     this.user.newPassword(newPassword, function (result, data) {
                       if (result == "1") {
@@ -621,7 +647,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                         _this.logger.error("error of otp " + data);
                       }
                     });
-                    _context2.next = 16;
+                    _context3.next = 16;
                     break;
 
                   case 13:
@@ -633,10 +659,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
                   case 16:
                   case "end":
-                    return _context2.stop();
+                    return _context3.stop();
                 }
               }
-            }, _callee2, this);
+            }, _callee3, this);
           }));
         }
       }]);

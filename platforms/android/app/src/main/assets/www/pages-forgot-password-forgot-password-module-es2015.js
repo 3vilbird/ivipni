@@ -101,7 +101,7 @@ ForgotPasswordPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("page-forgotpassword ion-header {\n  background-color: blue;\n}\npage-forgotpassword .button-round-ios {\n  height: 10px;\n}\npage-forgotpassword .button-round-md {\n  height: 10px;\n}\npage-forgotpassword .tageinforgot {\n  color: gray;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RldmlsL3ZvbHVtZS9wcm9qZWN0cy9mcmVlbGFuY2luZ3dvcmsvbmV3X3dvcmsvaXZpcG5pLTEvc3JjL2FwcC9wYWdlcy9mb3Jnb3QtcGFzc3dvcmQvZm9yZ290LXBhc3N3b3JkLnBhZ2Uuc2NzcyIsInNyYy9hcHAvcGFnZXMvZm9yZ290LXBhc3N3b3JkL2ZvcmdvdC1wYXNzd29yZC5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0k7RUFDRSxzQkFBQTtBQ0FOO0FERUk7RUFDRSxZQUFBO0FDQU47QURFSTtFQUNFLFlBQUE7QUNBTjtBREVJO0VBQ0UsV0FBQTtBQ0FOIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvZm9yZ290LXBhc3N3b3JkL2ZvcmdvdC1wYXNzd29yZC5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJwYWdlLWZvcmdvdHBhc3N3b3JkIHtcbiAgICBpb24taGVhZGVyIHtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6IGJsdWU7XG4gICAgfVxuICAgIC5idXR0b24tcm91bmQtaW9zIHtcbiAgICAgIGhlaWdodDogMTBweDtcbiAgICB9XG4gICAgLmJ1dHRvbi1yb3VuZC1tZCB7XG4gICAgICBoZWlnaHQ6IDEwcHg7XG4gICAgfVxuICAgIC50YWdlaW5mb3Jnb3Qge1xuICAgICAgY29sb3I6IGdyYXk7XG4gICAgfVxuICB9XG4gICIsInBhZ2UtZm9yZ290cGFzc3dvcmQgaW9uLWhlYWRlciB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsdWU7XG59XG5wYWdlLWZvcmdvdHBhc3N3b3JkIC5idXR0b24tcm91bmQtaW9zIHtcbiAgaGVpZ2h0OiAxMHB4O1xufVxucGFnZS1mb3Jnb3RwYXNzd29yZCAuYnV0dG9uLXJvdW5kLW1kIHtcbiAgaGVpZ2h0OiAxMHB4O1xufVxucGFnZS1mb3Jnb3RwYXNzd29yZCAudGFnZWluZm9yZ290IHtcbiAgY29sb3I6IGdyYXk7XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = ("page-forgotpassword ion-header {\n  background-color: blue;\n}\npage-forgotpassword .button-round-ios {\n  height: 10px;\n}\npage-forgotpassword .button-round-md {\n  height: 10px;\n}\npage-forgotpassword .tageinforgot {\n  color: gray;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RldmlsL0Rlc2t0b3AvaXZpcG5pL3NyYy9hcHAvcGFnZXMvZm9yZ290LXBhc3N3b3JkL2ZvcmdvdC1wYXNzd29yZC5wYWdlLnNjc3MiLCJzcmMvYXBwL3BhZ2VzL2ZvcmdvdC1wYXNzd29yZC9mb3Jnb3QtcGFzc3dvcmQucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNJO0VBQ0Usc0JBQUE7QUNBTjtBREVJO0VBQ0UsWUFBQTtBQ0FOO0FERUk7RUFDRSxZQUFBO0FDQU47QURFSTtFQUNFLFdBQUE7QUNBTiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2ZvcmdvdC1wYXNzd29yZC9mb3Jnb3QtcGFzc3dvcmQucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsicGFnZS1mb3Jnb3RwYXNzd29yZCB7XG4gICAgaW9uLWhlYWRlciB7XG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibHVlO1xuICAgIH1cbiAgICAuYnV0dG9uLXJvdW5kLWlvcyB7XG4gICAgICBoZWlnaHQ6IDEwcHg7XG4gICAgfVxuICAgIC5idXR0b24tcm91bmQtbWQge1xuICAgICAgaGVpZ2h0OiAxMHB4O1xuICAgIH1cbiAgICAudGFnZWluZm9yZ290IHtcbiAgICAgIGNvbG9yOiBncmF5O1xuICAgIH1cbiAgfVxuICAiLCJwYWdlLWZvcmdvdHBhc3N3b3JkIGlvbi1oZWFkZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibHVlO1xufVxucGFnZS1mb3Jnb3RwYXNzd29yZCAuYnV0dG9uLXJvdW5kLWlvcyB7XG4gIGhlaWdodDogMTBweDtcbn1cbnBhZ2UtZm9yZ290cGFzc3dvcmQgLmJ1dHRvbi1yb3VuZC1tZCB7XG4gIGhlaWdodDogMTBweDtcbn1cbnBhZ2UtZm9yZ290cGFzc3dvcmQgLnRhZ2VpbmZvcmdvdCB7XG4gIGNvbG9yOiBncmF5O1xufSJdfQ== */");
 
 /***/ }),
 
@@ -187,27 +187,35 @@ let ForgotPasswordPage = class ForgotPasswordPage {
             .catch((error) => console.error(error));
     }
     retriveSMS() {
-        // issues time out after 5 min
-        console.log("Watching SMS");
-        this.smsRetriever
-            .startWatching()
-            .then((res) => {
-            console.log(res);
-            //  <#> 323741 is your 6 digit OTP for MyApp. t3YUyserD4H
-            // logic to retrieve read sms depends on the string
-            // this function will be automatically dissmissed after some time 5min
-            const otp = res.Message.toString().substr(0, 4);
-            alert(`OTP Received - ${otp}`);
-            this.otpNumber = otp;
-            console.log("the otp ii ===>", this.otpNumber);
-            // call to get sms()
-            this.storeSMS();
-        })
-            .catch((error) => {
-            console.error(error);
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            // issues time out after 5 min
+            this.loading = yield this.loadingCtrl.create({
+                message: `<ion-spinner name="bubbles"></ion-spinner>`,
+            });
+            this.loading.present();
+            console.log("Watching SMS");
+            this.smsRetriever
+                .startWatching()
+                .then((res) => {
+                console.log(res);
+                //  <#> 323741 is your 6 digit OTP for MyApp. t3YUyserD4H
+                // logic to retrieve read sms depends on the string
+                // this function will be automatically dissmissed after some time 5min
+                const otp = res.Message.toString().substr(0, 4);
+                alert(`OTP Received - ${otp}`);
+                this.otpNumber = otp;
+                console.log("the otp ii ===>", this.otpNumber);
+                // call to get sms()
+                this.loading.dismiss();
+                this.storeSMS();
+            })
+                .catch((error) => {
+                console.error(error);
+                this.loading.dismiss();
+                this.storeSMS();
+            });
             this.storeSMS();
         });
-        this.storeSMS();
     }
     //====================================================
     generateOTP() {

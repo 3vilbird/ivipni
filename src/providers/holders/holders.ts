@@ -24,13 +24,12 @@ export class Holders {
     public toastCtrl: ToastController,
     public network: Network,
     public logger: Logger
-  ) {
-  }
+  ) {}
 
   async showNetworkAlert() {
     var _this = this;
     let networkAlert = await _this.alertCtrl.create({
-     header: "No Internet Connection",
+      header: "No Internet Connection",
       message:
         "Cannot proceed with this operation. No network connection!. Please check your internet connection",
       buttons: [
@@ -38,9 +37,9 @@ export class Holders {
           text: "Ok",
           handler: () => {
             _this.logger.info("clicked cancel button");
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
     await networkAlert.present();
   }
@@ -54,27 +53,27 @@ export class Holders {
           text: "Ok",
           handler: () => {
             _this.logger.info("clicked showErrorAlert cancel button");
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
     await networkAlert.present();
   }
 
-  // presentLoadingCustom() {
-  //   this.loading = this.loadingCtrl.create({
-  //     spinner: "crescent"
+  async presentLoadingCustom() {
+    this.loading = await this.loadingCtrl.create({
+      spinner: "crescent",
+    });
+    this.loading.present();
+  }
+
+  // async presentLoadingCustom() {
+  //   this.loading = await this.loadingCtrl.create({
+  //     message: ``,
+  //     duration: 2000,
   //   });
   //   this.loading.present();
   // }
-
-  async presentLoadingCustom() {
-    let loading = await this.loadingCtrl.create({
-      message: ``,
-      duration: 2000,
-    });
-    loading.present();
-  }
 
   setLoginData(data) {
     this.loginData = data;
@@ -113,9 +112,9 @@ export class Holders {
           text: "Ok",
           handler: () => {
             _this.logger.info("clicked showErrorAlert cancel button");
-          }
-        }
-      ]
+          },
+        },
+      ],
     });
     await networkAlert.present();
   }
